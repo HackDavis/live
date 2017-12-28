@@ -1,0 +1,6 @@
+.schedule {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid seashell;
+    box-shadow: 0 4px 2px -2px gray;
+}

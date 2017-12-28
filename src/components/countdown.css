@@ -1,0 +1,43 @@
+.countdown {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .block {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border-top: 3px solid #55419c;
+      border-bottom: 3px solid #55419c;
+  }
+  
+  .block:first-child {
+      padding-left: 0;
+  }
+
+  .block:last-child {
+      padding-right: 0;
+  }
+
+  .text {
+      color: #945ebe;
+      font-size: 25px;
+      font-family: 'Futura Std';
+      font-weight: 40;
+      margin-top:10px;
+      margin-bottom: 10px;
+      text-align: center;
+  }
+  
+  .digit {
+      color: #55419c;
+      font-size: 130px;
+      font-weight: 100;
+      font-family: 'Futura-StdHeavy';
+      margin: 10px;
+      text-align: center;
+  }
+
+  .m-b-2{
+      margin-bottom: 20px;
+  }
