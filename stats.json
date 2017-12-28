@@ -1,0 +1,76 @@
+{
+  "assetsByChunkName": {
+    "path---map": [
+      "path---map-a0e39f21c11f6a62c5ab.js",
+      "path---map-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-api-js": [
+      "component---src-pages-api-js-2ca2b1dd22dec8ef9bed.js",
+      "component---src-pages-api-js-2ca2b1dd22dec8ef9bed.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-183f22394ade258d24ca.js",
+      "component---src-pages-index-js-183f22394ade258d24ca.js.map"
+    ],
+    "path---api": [
+      "path---api-a0e39f21c11f6a62c5ab.js",
+      "path---api-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-pages-prizes-js": [
+      "component---src-pages-prizes-js-612aeab49d10324e8091.js",
+      "component---src-pages-prizes-js-612aeab49d10324e8091.js.map"
+    ],
+    "path---faq": [
+      "path---faq-a0e39f21c11f6a62c5ab.js",
+      "path---faq-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-faq-js": [
+      "component---src-pages-faq-js-f9dac5f800b40b92a71c.js",
+      "component---src-pages-faq-js-f9dac5f800b40b92a71c.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-c07fb910d6def62d1779.js",
+      "component---src-layouts-index-js-c07fb910d6def62d1779.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-68aad81503ae45628ade.js",
+      "build-js-styles.css",
+      "commons-68aad81503ae45628ade.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-77a2d6ddde27dea2fe08.js",
+      "build-js-styles.css",
+      "app-77a2d6ddde27dea2fe08.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---prizes": [
+      "path---prizes-a0e39f21c11f6a62c5ab.js",
+      "path---prizes-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-map-js": [
+      "component---src-pages-map-js-2eca4f51b14486babbc5.js",
+      "component---src-pages-map-js-2eca4f51b14486babbc5.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
