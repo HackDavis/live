@@ -17,9 +17,11 @@ const Header = () => {
   <nav id="nav" className="navbar navbar-expand-md justify-content-between">
     <h1 id="nav-title" className="navbar-brand"><Link to="/">HACK<strong style={{fontFamily: 'FuturaStd-Heavy'}}>DAVIS</strong> LIVE</Link></h1>
     <div className="navbar-nav justify-content-center">
-      <div className="nav-item" onClick={passClick}> <Link to="/schedule" className="nav-link"> Schedule </Link> </div>
+      <div className="nav-item" onClick={passClick}> <Link to="/map" className="nav-link"> Map </Link> </div>
       <div className="nav-item" onClick={passClick}> <Link to="/FAQ" className="nav-link"> FAQ </Link> </div>
-      <div className="nav-item" onClick={passClick}> <Link to="/sponsors" className="nav-link"> Sponsors </Link> </div>
+      <div className="nav-item" onClick={passClick}> <Link to="/API" className="nav-link"> API </Link> </div>
+      <div className="nav-item" onClick={passClick}> <Link to="/prizes" className="nav-link"> Prizes </Link> </div>
+      <div className="nav-item" onClick={passClick}> <a href="http://devpost.com" className="nav-link"> Devpost </a> </div>
     </div>
   </nav>
   ) 
