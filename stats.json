@@ -5,8 +5,8 @@
       "path---map-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-api-js": [
-      "component---src-pages-api-js-2ca2b1dd22dec8ef9bed.js",
-      "component---src-pages-api-js-2ca2b1dd22dec8ef9bed.js.map"
+      "component---src-pages-api-js-cea18ead188d34c90051.js",
+      "component---src-pages-api-js-cea18ead188d34c90051.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-183f22394ade258d24ca.js",
@@ -21,20 +21,12 @@
       "path----557518bd178906f8d58a.js.map"
     ],
     "component---src-pages-prizes-js": [
-      "component---src-pages-prizes-js-612aeab49d10324e8091.js",
-      "component---src-pages-prizes-js-612aeab49d10324e8091.js.map"
-    ],
-    "path---faq": [
-      "path---faq-a0e39f21c11f6a62c5ab.js",
-      "path---faq-a0e39f21c11f6a62c5ab.js.map"
-    ],
-    "component---src-pages-faq-js": [
-      "component---src-pages-faq-js-f9dac5f800b40b92a71c.js",
-      "component---src-pages-faq-js-f9dac5f800b40b92a71c.js.map"
+      "component---src-pages-prizes-js-1becd730db99567a400a.js",
+      "component---src-pages-prizes-js-1becd730db99567a400a.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-c07fb910d6def62d1779.js",
-      "component---src-layouts-index-js-c07fb910d6def62d1779.js.map"
+      "component---src-layouts-index-js-37a57ab51d0e708b541f.js",
+      "component---src-layouts-index-js-37a57ab51d0e708b541f.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -54,10 +46,14 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-hardware-js": [
+      "component---src-pages-hardware-js-805a2899a6ce3ffc17cf.js",
+      "component---src-pages-hardware-js-805a2899a6ce3ffc17cf.js.map"
+    ],
     "app": [
-      "app-77a2d6ddde27dea2fe08.js",
+      "app-f1286a5b8fdf1b7a9d76.js",
       "build-js-styles.css",
-      "app-77a2d6ddde27dea2fe08.js.map",
+      "app-f1286a5b8fdf1b7a9d76.js.map",
       "build-js-styles.css.map"
     ],
     "path---prizes": [
@@ -65,12 +61,16 @@
       "path---prizes-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-map-js": [
-      "component---src-pages-map-js-2eca4f51b14486babbc5.js",
-      "component---src-pages-map-js-2eca4f51b14486babbc5.js.map"
+      "component---src-pages-map-js-5d96ca27bb09af1fa959.js",
+      "component---src-pages-map-js-5d96ca27bb09af1fa959.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---hardware": [
+      "path---hardware-3b689c7ef8466460df37.js",
+      "path---hardware-3b689c7ef8466460df37.js.map"
     ]
   }
 }
