@@ -1,7 +1,7 @@
 import React from 'react'
 
 const API = () => (
-  <div>
+  <div className="container">
     <h1>API</h1>
   </div>
 )

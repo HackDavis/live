@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Prizes = () => (
-  <div>
+  <div className="container">
     <h1>Prizes</h1>
   </div>
 )

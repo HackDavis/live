@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Map = () => (
-  <div>
+  <div className="container">
     <h1>Map</h1>
   </div>
 )

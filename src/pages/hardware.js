@@ -4,7 +4,7 @@ const Hardware = ({data}) => {
     const { markdownRemark } = data; // data.markdownRemark holds our post data
     const { frontmatter, html } = markdownRemark;
     return (
-        <div>
+        <div className="container">
             <a href="http://hardware.mlh.io"><button>This will lead to somewhere eventually</button></a>
             <div dangerouslySetInnerHTML={{ __html: html }}></div>
         </div>
