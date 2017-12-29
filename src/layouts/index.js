@@ -20,6 +20,7 @@ const Header = () => {
       <div className="nav-item" onClick={passClick}> <Link to="/map" className="nav-link"> Map </Link> </div>
       <div className="nav-item" onClick={passClick}> <Link to="/FAQ" className="nav-link"> FAQ </Link> </div>
       <div className="nav-item" onClick={passClick}> <Link to="/API" className="nav-link"> API </Link> </div>
+      <div className="nav-item" onClick={passClick}> <Link to="/hardware" className="nav-link"> Hardware </Link> </div>
       <div className="nav-item" onClick={passClick}> <Link to="/prizes" className="nav-link"> Prizes </Link> </div>
       <div className="nav-item" onClick={passClick}> <a href="http://devpost.com" className="nav-link"> Devpost </a> </div>
     </div>
