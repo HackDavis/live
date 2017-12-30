@@ -31,7 +31,7 @@ class IndexPage extends React.Component {
               hours={this.state.hours} 
               minutes={this.state.minutes} 
               seconds={this.state.seconds} 
-              displayNumber={window.innerWidth < 2000} 
+              displayNumber={window.innerWidth < 768} 
               thickness={5} />
             </div>
           </div>

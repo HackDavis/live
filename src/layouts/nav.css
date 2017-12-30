@@ -1,8 +1,6 @@
 #nav, #rearNav, #brownNav {
-    height: 75px;
     width: 100%;
     top: 0px;
-    min-height: 50px;
     background: transparent;
     border-radius: 0;
     opacity: 1;
@@ -18,8 +16,8 @@
     display: inline-block;
     margin-left: 50px;
     font-size: 36px;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-family: 'Futura Std';
 }
 #nav-title > a {
@@ -52,32 +50,19 @@
     text-align: center;
     font-weight: 400;
     font-size: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0.25em;
-    padding-right: 0.25em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0.75em !important;
+    padding-right: 0.75em !important;
+    color: white !important;
+    font-family: inherit;
+    text-decoration: none;
     z-index: 10;
 }
-.navbar > .navbar-nav {
-    height: 75px;
-}
-.nav-item:hover {
+.nav-item:hover, .nav-item.active {
     background-color: #5481be;
     cursor: pointer;
     text-decoration: none;
-}
-
-.nav-item > a {
-    color: white !important;
-    font-family: 'Futura Std';
-    text-decoration: none;
-
-    /* use em's to calculate line spacing from the font-size set on .nav-item class
-    This will improve responsiveness, I have calculated these values from the existing values in px on the .nav-item class */
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    line-height: 40px;
-    pointer-events: none;
 }
 
 /*First link in nav bar*/

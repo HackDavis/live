@@ -28,7 +28,7 @@
   .text {
       color: #945ebe;
       font-size: 25px;
-      font-family: 'Futura Std';
+      font-family: inherit;
       font-weight: 40;
       margin-top:10px;
       margin-bottom: 10px;
@@ -37,9 +37,9 @@
   
   .digit {
       color: #55419c;
-      font-size: 5em;
+      font-size: 4em;
       font-weight: 100;
-      font-family: 'Futura-StdHeavy';
+      font-family: inherit;
       margin: 10px;
       text-align: center;
   }
@@ -58,8 +58,8 @@
           display: none;
       }
       .knob {
-        max-width: 350px;
-        max-height: 350px;
+        max-width: 400px;
+        max-height: 400px;
         margin-top: 1em;
     }
   }
