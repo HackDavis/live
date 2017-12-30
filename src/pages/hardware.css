@@ -1,0 +1,51 @@
+.hero {
+    background-color: #41699c;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 100px;
+    color: white;
+}
+.hero > h1 {
+    margin-bottom: 100px;
+}
+.hardware-content {
+    background-color: white;
+    border-radius: 1rem 1rem 0px 0px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+.round-button {
+    background: transparent;
+    border: .2rem solid;
+    border-radius: 30px;
+    transition: all 0.5s;
+    transition-timing-function: ease-in-out;
+    min-width: 10em;
+    min-height: 60px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.landing-button {
+    position: relative;
+    top: -2em;
+}
+.white-button:focus {
+    outline: 0;
+}
+.round-button:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+.white-button:hover {
+    background-color: white;
+    border-color: white;
+    color: #52749d;
+}
+.white-button {
+    border-color: rgba(255, 255, 255, 0.75);
+    color: white;
+}

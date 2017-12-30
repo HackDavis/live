@@ -69,11 +69,8 @@ class TemplateWrapper extends React.Component {
         <Header />
         { this.state.alert && this.state.alert.text !== "" ? <Alert text={this.state.alert.text} important={this.state.alert.important}/> : null}
         <div
-          className="container-fluid"
           style={{
             margin: '0 auto',
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: "15px",
           }}
         >
           {this.state.children()}

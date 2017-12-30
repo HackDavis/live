@@ -1,14 +1,20 @@
 .countdown {
     display: flex;
-    justify-content: center;
+    border-top: 3px solid #55419c;
+    border-bottom: 3px solid #55419c;
+    justify-content: space-evenly;
   }
-  
+
+@media(min-width: 1000px) {
+  .large-container {
+      margin-left: 25px;
+      margin-right: 25px;
+  }
+}
   .block {
       display: flex;
       flex-direction: column;
       padding: 20px;
-      border-top: 3px solid #55419c;
-      border-bottom: 3px solid #55419c;
   }
   
   .block:first-child {
@@ -38,6 +44,9 @@
       text-align: center;
   }
 
-  .m-b-2{
+  .m-b-2 {
       margin-bottom: 20px;
+  }
+  .m-r-2 {
+      margin-right: 20px;
   }
