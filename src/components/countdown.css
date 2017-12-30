@@ -1,14 +1,20 @@
 .countdown {
     display: flex;
-    justify-content: center;
+    border-top: 3px solid #55419c;
+    border-bottom: 3px solid #55419c;
+    justify-content: space-evenly;
   }
-  
+
+@media(min-width: 1120px) {
+  .large-container {
+      margin-left: 25px;
+      margin-right: 25px;
+  }
+}
   .block {
       display: flex;
       flex-direction: column;
       padding: 20px;
-      border-top: 3px solid #55419c;
-      border-bottom: 3px solid #55419c;
   }
   
   .block:first-child {
@@ -31,13 +37,29 @@
   
   .digit {
       color: #55419c;
-      font-size: 130px;
+      font-size: 5em;
       font-weight: 100;
       font-family: 'Futura-StdHeavy';
       margin: 10px;
       text-align: center;
   }
-
-  .m-b-2{
-      margin-bottom: 20px;
+  .knob {
+      max-width: 250px;
+      max-height: 250px;
+      margin-top: 4em;
+      width: 100%;
+      height: 100%;
+  }
+  .m-r-2 {
+      margin-right: 20px;
+  }
+  @media(max-width: 768px) {
+      .countdown-container{
+          display: none;
+      }
+      .knob {
+        max-width: 350px;
+        max-height: 350px;
+        margin-top: 1em;
+    }
   }

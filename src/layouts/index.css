@@ -8,6 +8,9 @@
   font-weight: bold;
   src: url('../../static/fonts/futura/FuturaStd-Heavy.otf');
 }
+.alert {
+  margin-bottom: 0;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -629,6 +632,6 @@ pre tt:after {
 }
 @media only screen and (max-width: 480px) {
   html {
-    font-size: 100%;
+    font-size: 14px;
   }
 }

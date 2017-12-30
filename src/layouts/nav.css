@@ -54,8 +54,8 @@
     font-size: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 0.33em;
-    padding-right: 0.33em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
     z-index: 10;
 }
 .navbar > .navbar-nav {
@@ -74,8 +74,8 @@
 
     /* use em's to calculate line spacing from the font-size set on .nav-item class
     This will improve responsiveness, I have calculated these values from the existing values in px on the .nav-item class */
-    padding-left: 0.67em;
-    padding-right: 0.67em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     line-height: 40px;
     pointer-events: none;
 }
@@ -85,7 +85,7 @@
    margin-right: 20px;
  }
 /*For Tablets*/
- @media (max-width: 900px) {
+ @media (max-width: 1120px) {
     #nav-title {
         margin-left: 25px;
         font-size: 32px;
