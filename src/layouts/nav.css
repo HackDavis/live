@@ -66,8 +66,10 @@
 }
 
 /*First link in nav bar*/
-.nav-item:last-child {
-   margin-right: 20px;
+@media(min-width: 992px) {
+    .nav-item:last-child {
+        margin-right: 20px;
+    }
  }
 /*For Tablets*/
  @media (max-width: 1120px) {
