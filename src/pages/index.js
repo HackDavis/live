@@ -19,6 +19,9 @@ class IndexPage extends React.Component {
   render(){
     return (
       <div className="container-fluid index-container" style={{paddingTop: "15px"}}>
+        <div className="end-container">
+          <h1 style={{textAlign: "center", color: "#55419c"}}>HackDavis ends in: </h1>
+        </div>
         <div ref={(e) => {if(e) this.circleWidth = e.clientWidth - parseInt(window.getComputedStyle(e).getPropertyValue("padding-left")) - parseInt(window.getComputedStyle(e).getPropertyValue('padding-left'))}}
         className="knob">
           <Knob lineCap='round' 
@@ -36,7 +39,7 @@ class IndexPage extends React.Component {
         <div className="countdown-container">
           <Countdown hours={this.state.hours} minutes={this.state.minutes} seconds={this.state.seconds}/>
         </div>
-        <div className="timeline-container" style={{marginTop: "10px", maxWidth: "600px"}}>
+        <div className="timeline-container" style={{marginTop: "10px", width: "100%", maxWidth: "600px"}}>
           <Timeline dataSource={{sourceType: 'profile', screenName: 'hack_davis'}} options={{height: "600px"}}/>
         </div>
       </div>        
