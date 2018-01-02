@@ -1,6 +1,14 @@
-.schedule {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid seashell;
-    box-shadow: 0 4px 2px -2px gray;
+.schedule-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+.list-container {
+    flex-direction: column;
+    grid-column: 1 / 2;
+    height: 600px;
+    overflow-y: scroll;
+}
+.list-card {
+    height: 3em;
 }

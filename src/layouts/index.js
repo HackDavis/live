@@ -6,7 +6,9 @@ import Alert from '../components/alert.js'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import $ from 'jquery'
-import 'bootstrap/dist/js/bootstrap.min.js'
+  //if(typeof window !== 'undefined'){ require('bootstrap/dist/js/bootstrap.min.js') }
+import Collapse from '../vendor/collapse';
+Collapse($);
 
 import './index.css'
 import './nav.css'

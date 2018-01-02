@@ -22,10 +22,10 @@ class IndexPage extends React.Component {
         <div className="end-container">
           <h1 style={{textAlign: "center", color: "#55419c"}}>HackDavis ends in: </h1>
         </div>
-        <div ref={(e) => {if(e) this.circleWidth = e.clientWidth - parseInt(window.getComputedStyle(e).getPropertyValue("padding-left")) - parseInt(window.getComputedStyle(e).getPropertyValue('padding-left'))}}
+        <div ref={(e) => {if(e && typeof window !== `undefined`) this.circleWidth = e.clientWidth - parseInt(window.getComputedStyle(e).getPropertyValue("padding-left")) - parseInt(window.getComputedStyle(e).getPropertyValue('padding-left'))}}
         className="knob">
           <Knob lineCap='round' 
-          sColor="#55419c" 
+          sColor="#55419c"
           mColor="#945ebe"
           hColor="#b766ad" 
           width={this.circleWidth} 
@@ -33,7 +33,7 @@ class IndexPage extends React.Component {
           hours={this.state.hours} 
           minutes={this.state.minutes} 
           seconds={this.state.seconds} 
-          displayNumber={window.innerWidth < 768} 
+          displayNumber={typeof window !== `undefined` ? window.innerWidth < 768 : false} 
           thickness={5} />
         </div>
         <div className="countdown-container">
@@ -41,6 +41,9 @@ class IndexPage extends React.Component {
         </div>
         <div className="timeline-container" style={{marginTop: "10px", width: "100%", maxWidth: "600px"}}>
           <Timeline dataSource={{sourceType: 'profile', screenName: 'hack_davis'}} options={{height: "600px"}}/>
+        </div>
+        <div className="schedule-container">
+          <Schedule />
         </div>
       </div>        
     )

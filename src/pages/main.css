@@ -13,7 +13,6 @@ html::before, html::after{
     width: 100%;
     height: 100%;
     justify-self: center;
-    align-self: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -45,7 +44,9 @@ html::before, html::after{
 .index-container {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: 50px auto auto;
+    grid-template-rows: 50px auto 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
 }
 @media(min-width: 768px) {
     .end-container{
@@ -82,6 +83,10 @@ html::before, html::after{
     }
     .timeline-container {
         grid-column: 9 / 12;
-        grid-row: 2 / 4;
+        grid-row: 1 / 4;
+    }
+    .schedule-container {
+        grid-column: 1 / 9;
+        grid-row: 3 / 4;
     }
 }
