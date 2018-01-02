@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import $ from 'jquery'
   //if(typeof window !== 'undefined'){ require('bootstrap/dist/js/bootstrap.min.js') }
 import Collapse from '../vendor/collapse';
-Collapse($);
+if( typeof window !== `undefined` ) Collapse($);
 
 import './index.css'
 import './nav.css'
