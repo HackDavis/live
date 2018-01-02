@@ -9,8 +9,8 @@
       "component---src-pages-api-js-cea18ead188d34c90051.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-650b0a9fb0566793176b.js",
-      "component---src-pages-index-js-650b0a9fb0566793176b.js.map"
+      "component---src-pages-index-js-5604c1d86608d47fee17.js",
+      "component---src-pages-index-js-5604c1d86608d47fee17.js.map"
     ],
     "path---api": [
       "path---api-a0e39f21c11f6a62c5ab.js",
@@ -25,8 +25,8 @@
       "component---src-pages-prizes-js-1becd730db99567a400a.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-445110cc9da9456aee55.js",
-      "component---src-layouts-index-js-445110cc9da9456aee55.js.map"
+      "component---src-layouts-index-js-38b58bb7999aa7f0fdfe.js",
+      "component---src-layouts-index-js-38b58bb7999aa7f0fdfe.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -47,13 +47,13 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-hardware-js": [
-      "component---src-pages-hardware-js-6424d25ae408bbbc86d5.js",
-      "component---src-pages-hardware-js-6424d25ae408bbbc86d5.js.map"
+      "component---src-pages-hardware-js-25fd549b8a3b98a488ca.js",
+      "component---src-pages-hardware-js-25fd549b8a3b98a488ca.js.map"
     ],
     "app": [
-      "app-ba1f34aefa2a88c5c311.js",
+      "app-fcf548fd9c478ddffb0f.js",
       "build-js-styles.css",
-      "app-ba1f34aefa2a88c5c311.js.map",
+      "app-fcf548fd9c478ddffb0f.js.map",
       "build-js-styles.css.map"
     ],
     "path---prizes": [
