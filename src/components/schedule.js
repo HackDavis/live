@@ -5,6 +5,7 @@ import Items from '../json/Schedule.json'
 import Media from "react-media"
 import Arrow from 'react-icons/lib/fa/angle-double-down'
 import { CSSTransitionGroup } from 'react-transition-group'
+import moment from 'moment';
 
 class Schedule extends React.Component {
     constructor(props) {
@@ -49,11 +50,11 @@ class Schedule extends React.Component {
                     <div className="card-group list-container">
                         <dt>Jan 20</dt>
                         {this.state.items.map((v, i) => {
-                            if(new Date(v.start).getDate() == 20) return (<ScheduleItem key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
+                            if(moment(v.start).date() == 20) return (<ScheduleItem key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                         <dt>Jan 21</dt>
                         {this.state.items.map((v, i) => {
-                            if(new Date(v.start).getDate() == 21)return (<ScheduleItem key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
+                            if(moment(v.start).date() == 21)return (<ScheduleItem key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                     </div>
                 </div>
@@ -61,7 +62,8 @@ class Schedule extends React.Component {
                 render={() => {
                     return (
                         <div className="detail-component">
-                            <Detail title={this.state.items[this.state.detailIndex].title}/>
+                            <Detail start={moment(this.state.items[this.state.detailIndex].start)} end={moment(this.state.items[this.state.detailIndex].end)} title={this.state.items[this.state.detailIndex].title}
+                            description={this.state.items[this.state.detailIndex].description}/>
                         </div>
                     );
                 }}
@@ -97,8 +99,8 @@ class ScheduleItem extends React.Component {
         })
     }
     render() {
-        let start = new Date(this.props.item.start);
-        let end = new Date(this.props.item.end);
+        let start = moment(this.props.item.start);
+        let end = moment(this.props.item.end);
         return(
             <CSSTransitionGroup
                 transitionName="fade"
@@ -111,9 +113,9 @@ class ScheduleItem extends React.Component {
                             <h5 className="card-title">{this.props.item.title}</h5>
                         </div>
                         <div className="card-right">
-                            <p>{start.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</p>
+                            <p>{start.format("hh:mm A")}</p>
                             <hr />
-                            <p>{end.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</p>
+                            <p>{end.format("hh:mm A")}</p>
                         </div>
                         
                     </div>
@@ -125,7 +127,10 @@ class ScheduleItem extends React.Component {
                 {
                     this.state.expanded ? <Media query={{maxWidth: 992}}
                         render={() => {
-                            return (<Detail title={this.props.item.title}/>);
+                            return (<Detail start={start} 
+                                end={end} 
+                                title={this.props.item.title}
+                                description={this.props.item.description}/>);
                         }}
                     /> : null
                 }
@@ -135,8 +140,10 @@ class ScheduleItem extends React.Component {
 }
 const Detail = (props) => (
     <div className="card">
-        <div className="card-header">
+        <div className="card-body">
             <h1 className="card-title">{props.title}</h1>
+            <h3 className="card-subtitle mb-2 text-muted">{props.start.format("Do MMM hh:mm A") + " - " + props.end.format("Do MMM hh:mm A")}</h3>
+            <p className="card-text">{props.description}</p>
         </div>
     </div>
 )

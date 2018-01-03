@@ -18,6 +18,7 @@
     height: 600px;
     overflow-y: auto;
     flex-wrap: nowrap;
+    margin-bottom: 20px;
 }
 .list-container dt{
     top: 0px;
@@ -37,8 +38,11 @@
 }
 .detail-component {
     padding-left: 20px;
-    margin-top: 2.5em;
+    margin-top: 2.7em;
     flex-basis: 70%
+}
+.detail-component .card-title {
+    margin-left: 0.1em;
 }
 .card-right p, .card-right hr {
     margin-bottom: 0.5rem;
