@@ -1,2 +1,0 @@
-webpackJsonp([87192162464282],{301:function(e,t,u){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var n=u(1),a=l(n),r=function(){return a.default.createElement("div",null,a.default.createElement("h1",null,"FAQ"))};t.default=r,e.exports=t.default}});
-//# sourceMappingURL=component---src-pages-faq-js-f9dac5f800b40b92a71c.js.map
