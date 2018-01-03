@@ -50,11 +50,11 @@ class Schedule extends React.Component {
                     <div className="card-group list-container">
                         <dt>Jan 20</dt>
                         {this.state.items.map((v, i) => {
-                            if(moment(v.start).date() == 20) return (<ScheduleItem key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
+                            if(moment(v.start).date() == 20) return (<ScheduleItem active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                         <dt>Jan 21</dt>
                         {this.state.items.map((v, i) => {
-                            if(moment(v.start).date() == 21)return (<ScheduleItem key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
+                            if(moment(v.start).date() == 21)return (<ScheduleItem active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                     </div>
                 </div>
@@ -98,13 +98,16 @@ class ScheduleItem extends React.Component {
             expanded: !this.state.expanded
         })
     }
+    componentWillReceiveProps(nextProps){
+        if(this.props.active == true && nextProps.active == false) this.setState({expanded: false});
+    }
     render() {
         let start = moment(this.props.item.start);
         let end = moment(this.props.item.end);
         return(
             <CSSTransitionGroup
                 transitionName="fade"
-                transitionEnterTimeout={500}
+                transitionEnterTimeout={800}
                 transitionLeaveTimeout={300}    
             >
                 <div className="card list-card" onClick={this.handle.bind(this)}>

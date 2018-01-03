@@ -40,7 +40,7 @@ class IndexPage extends React.Component {
           <Countdown hours={this.state.hours} minutes={this.state.minutes} seconds={this.state.seconds}/>
         </div>
         <div className="timeline-container" style={{marginTop: "10px", width: "100%", maxWidth: "600px"}}>
-          <Timeline dataSource={{sourceType: 'profile', screenName: 'hack_davis'}} options={{height: "600px"}}/>
+          <Timeline dataSource={{sourceType: 'profile', screenName: 'hack_davis'}} options={{height: 800}}/>
         </div>
         <div className="schedule-container">
           <Schedule />
