@@ -18,6 +18,9 @@ html::before, html::after{
     flex-direction: column;
 }
 @media(max-width: 768px) {  
+    .index-container {
+        grid-template-rows: 50px auto 1fr 1fr;
+    }
   .knob {
     max-width: 400px;
     max-height: 400px;
@@ -37,8 +40,12 @@ html::before, html::after{
     }
     .timeline-container {
         grid-column: 1 / 12;
-        grid-row: 3 / 4;
+        grid-row: 4 / 5;
         justify-self: center;
+    }
+    .schedule-container {
+        grid-column: 1 / 12;
+        grid-row: 3 / 4;
     }
 }
 .index-container {
@@ -66,6 +73,10 @@ html::before, html::after{
         grid-column: 9 / 12;
         grid-row: 3 / 4;
     }
+    .schedule-container {
+        grid-column: 1 / 9;
+        grid-row: 3 / 4;
+    }
 }
 @media(min-width: 992px) {
     .end-container{
@@ -84,9 +95,5 @@ html::before, html::after{
     .timeline-container {
         grid-column: 9 / 12;
         grid-row: 1 / 4;
-    }
-    .schedule-container {
-        grid-column: 1 / 9;
-        grid-row: 3 / 4;
     }
 }

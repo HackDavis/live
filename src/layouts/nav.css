@@ -44,7 +44,7 @@
 }
 
 /* div that contains the <a> navigation links */
-.nav-item {
+#nav .nav-item {
     height: 100%;
     float: right;
     text-align: center;
@@ -59,7 +59,7 @@
     text-decoration: none;
     z-index: 10;
 }
-.nav-item:hover, .nav-item.active {
+#nav .nav-item:hover, .nav-item.active {
     background-color: #5481be;
     cursor: pointer;
     text-decoration: none;
@@ -67,7 +67,7 @@
 
 /*First link in nav bar*/
 @media(min-width: 992px) {
-    .nav-item:last-child {
+    #nav .nav-item:last-child {
         margin-right: 20px;
     }
  }
@@ -77,7 +77,7 @@
         margin-left: 25px;
         font-size: 32px;
     }
-   .nav-item {
+   #nav .nav-item {
        font-size: 20px;
    }
  }
