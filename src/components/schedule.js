@@ -3,6 +3,7 @@ import './schedule.css'
 import Categories from '../json/categories.json'
 import Items from '../json/Schedule.json'
 import Media from "react-media"
+import Arrow from 'react-icons/lib/fa/angle-double-down'
 
 class Schedule extends React.Component {
     constructor(props) {
@@ -96,7 +97,12 @@ const ScheduleItem = (props) => {
                     <hr />
                     <p>{end.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</p>
                 </div>
+                
             </div>
+            <Media query={{maxWidth: 992}}
+                render={() => {
+                    return (<div style={{textAlign:"center"}}><Arrow height="1.5em" width="1.5em"/></div>)
+                }} />
         </div>
     );
 }

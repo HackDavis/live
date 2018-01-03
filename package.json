@@ -12,6 +12,7 @@
     "gatsby-transformer-remark": "^1.7.26",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.9",
+    "react-icons": "^2.2.7",
     "react-media": "^1.6.1",
     "react-time-knob": "^0.1.4",
     "react-twitter-widgets": "^1.7.1"
