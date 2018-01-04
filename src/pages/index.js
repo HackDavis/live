@@ -43,7 +43,7 @@ class IndexPage extends React.Component {
           <Timeline dataSource={{sourceType: 'profile', screenName: 'hack_davis'}} options={{height: 800}}/>
         </div>
         <div className="schedule-container">
-          <Schedule />
+          <Schedule data={this.props.data}/>
         </div>
       </div>        
     )
@@ -76,3 +76,20 @@ componentWillUnmount() {
 }
 
 export default IndexPage
+export const pageQuery = graphql`
+query index{
+  allMarkdownRemark (filter:{frontmatter:{link:{eq: "Schedule"}}}){
+    edges{
+      node{
+        frontmatter{
+          title
+          category
+          start
+          end
+          host
+        }
+        html
+      }
+    }
+  }
+}`

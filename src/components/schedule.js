@@ -1,19 +1,28 @@
 import React from 'react'
 import './schedule.css'
-import Categories from '../json/categories.json'
-import Items from '../json/Schedule.json'
 import Media from "react-media"
 import Arrow from 'react-icons/lib/fa/angle-double-down'
 import { CSSTransitionGroup } from 'react-transition-group'
 import moment from 'moment';
+import ReactHTMLParser from 'react-html-parser';
+import { withPrefix } from 'gatsby-link'
 
 class Schedule extends React.Component {
     constructor(props) {
         super(props);
-        console.log(props.data)
+        this.Items = [];
+        let categories = new Set();
+        categories.add("All")
+        props.data.allMarkdownRemark.edges.forEach((value) => {
+            let item = value.node.frontmatter;
+            item.html = value.node.html;
+            this.Items.push(item);
+            categories.add(item.category);
+        });
+        this.categories = Array.from(categories.values());
         this.state = {
             filter: "All",
-            items: Items,
+            items: this.Items,
             detailIndex: 0
         }
     }
@@ -29,7 +38,7 @@ class Schedule extends React.Component {
     }
     switchActiveSet(i) {
         if(i) {
-            let array = Items.filter((t) => {return i === `All` || t.category === i});
+            let array = this.Items.filter((t) => {return i === `All` || t.category === i});
             this.setState({
                 filter: i,
                 items: array
@@ -41,7 +50,7 @@ class Schedule extends React.Component {
             <div className="schedule-grid-container">
                 <div className="list-component">
                     <nav className="nav nav-pills">
-                        {Categories.map(i => {
+                        {this.categories.map(i => {
                             return (
                                 <NavPillItem handler={this.switchActiveSet.bind(this)} key={i} text={i} filter={this.state.filter} />
                             );
@@ -63,7 +72,7 @@ class Schedule extends React.Component {
                     return (
                         <div className="detail-component">
                             <Detail start={moment(this.state.items[this.state.detailIndex].start)} end={moment(this.state.items[this.state.detailIndex].end)} title={this.state.items[this.state.detailIndex].title}
-                            description={this.state.items[this.state.detailIndex].description}/>
+                            description={this.state.items[this.state.detailIndex].html}/>
                         </div>
                     );
                 }}
@@ -133,7 +142,7 @@ class ScheduleItem extends React.Component {
                             return (<Detail start={start} 
                                 end={end} 
                                 title={this.props.item.title}
-                                description={this.props.item.description}/>);
+                                description={this.props.item.html}/>);
                         }}
                     /> : null
                 }
@@ -146,7 +155,11 @@ const Detail = (props) => (
         <div className="card-body">
             <h1 className="card-title">{props.title}</h1>
             <h3 className="card-subtitle mb-2 text-muted">{props.start.format("Do MMM hh:mm A") + " - " + props.end.format("Do MMM hh:mm A")}</h3>
-            <p className="card-text">{props.description}</p>
+            <div>{ReactHTMLParser(props.description, {transform: (node) => {
+                if(node.type === 'tag' && node.name === 'img') {
+                    return <img alt={node.attribs.alt} title={node.attribs.title} src={withPrefix(node.attribs.src)}/>;
+                }
+            }})}</div>
         </div>
     </div>
 )
