@@ -15,6 +15,8 @@ class Schedule extends React.Component {
         categories.add("All")
         props.data.allMarkdownRemark.edges.forEach((value) => {
             let item = value.node.frontmatter;
+            item.start = moment(item.start);
+            item.end = moment(item.end);
             item.html = value.node.html;
             this.Items.push(item);
             categories.add(item.category);
@@ -59,11 +61,11 @@ class Schedule extends React.Component {
                     <div className="card-group list-container">
                         <dt>Jan 20</dt>
                         {this.state.items.map((v, i) => {
-                            if(moment(v.start).date() == 20) return (<ScheduleItem active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
+                            if(v.start.date() == 20) return (<ScheduleItem active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                         <dt>Jan 21</dt>
                         {this.state.items.map((v, i) => {
-                            if(moment(v.start).date() == 21)return (<ScheduleItem active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
+                            if(v.start.date() == 21)return (<ScheduleItem active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                     </div>
                 </div>
@@ -71,7 +73,7 @@ class Schedule extends React.Component {
                 render={() => {
                     return (
                         <div className="detail-component">
-                            <Detail start={moment(this.state.items[this.state.detailIndex].start)} end={moment(this.state.items[this.state.detailIndex].end)} title={this.state.items[this.state.detailIndex].title}
+                            <Detail start={this.state.items[this.state.detailIndex].start} end={this.state.items[this.state.detailIndex].end} title={this.state.items[this.state.detailIndex].title}
                             description={this.state.items[this.state.detailIndex].html}/>
                         </div>
                     );
@@ -111,8 +113,8 @@ class ScheduleItem extends React.Component {
         if(this.props.active == true && nextProps.active == false) this.setState({expanded: false});
     }
     render() {
-        let start = moment(this.props.item.start);
-        let end = moment(this.props.item.end);
+        let start = this.props.item.start;
+        let end = this.props.item.end;
         return(
             <CSSTransitionGroup
                 transitionName="fade"
