@@ -25,6 +25,7 @@ const Header = () => {
     </button>
     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <div className="navbar-nav justify-content-center">
+        <Link exact to="/" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Home </Link>
         <Link exact to="/map" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Map </Link>
         <Link exact to="/API" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> API </Link>
         <Link exact to="/hardware"onClick={collapseNav}  activeClassName="active" className="nav-item nav-link"> Hardware </Link>
@@ -34,10 +35,10 @@ const Header = () => {
       </div>
     </div>
   </nav>
-  ) 
+  )
 }
 
-class TemplateWrapper extends React.Component { 
+class TemplateWrapper extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
