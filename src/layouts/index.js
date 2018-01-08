@@ -46,7 +46,8 @@ class TemplateWrapper extends React.Component {
     this.checkGist = this.checkGist.bind(this);
   }
   checkGist() {
-    fetch("https://jsonblob.com/api/3a53ec9b-ec40-11e7-becf-130bb7cd4851", {cache: 'reload'}).then((response) => {
+    fetch("https://getschedulehelper.com/alerts.json", {cache: 'reload'}).then((response) => {
+      console.log(response)
       response.json().then((alert) => {
         this.setState({
           children: this.state.children,
