@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import Countdown from '../components/countdown.js'
 import Schedule from '../components/schedule.js'
 import {Timeline} from 'react-twitter-widgets'
-import { Scrollbars } from 'react-custom-scrollbars';
 import Knob from 'react-time-knob'
 import './main.css'
 
