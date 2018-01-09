@@ -29,8 +29,8 @@ const Header = () => {
         <Link exact to="/API" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> API </Link>
         <Link exact to="/hardware"onClick={collapseNav}  activeClassName="active" className="nav-item nav-link"> Hardware </Link>
         <Link exact to="/prizes" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Prizes </Link>
-        <a href="http://help.hackdavis.io" className="nav-item nav-link"> Help Queue </a>
-        <a href="http://devpost.com" className="nav-item nav-link"> Devpost </a>
+        <a target="_blank" href="http://help.hackdavis.io" className="nav-item nav-link"> Help Queue </a>
+        <a target="_blank" href="http://devpost.com" className="nav-item nav-link"> Devpost </a>
       </div>
     </div>
   </nav>
