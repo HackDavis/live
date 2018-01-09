@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import Countdown from '../components/countdown.js'
 import Schedule from '../components/schedule.js'
 import {Timeline} from 'react-twitter-widgets'
+import { Scrollbars } from 'react-custom-scrollbars';
 import Knob from 'react-time-knob'
 import './main.css'
 
@@ -24,28 +25,30 @@ class IndexPage extends React.Component {
         </div>
         <div ref={(e) => {if(e && typeof window !== `undefined`) this.circleWidth = e.clientWidth - parseInt(window.getComputedStyle(e).getPropertyValue("padding-left")) - parseInt(window.getComputedStyle(e).getPropertyValue('padding-left'))}}
         className="knob">
-          <Knob lineCap='round' 
+          <Knob lineCap='round'
           sColor="#55419c"
           mColor="#945ebe"
-          hColor="#b766ad" 
-          width={this.circleWidth} 
-          height={this.circleWidth} 
-          hours={this.state.hours} 
-          minutes={this.state.minutes} 
-          seconds={this.state.seconds} 
-          displayNumber={typeof window !== `undefined` ? window.innerWidth < 768 : false} 
+          hColor="#b766ad"
+          width={this.circleWidth}
+          height={this.circleWidth}
+          hours={this.state.hours}
+          minutes={this.state.minutes}
+          seconds={this.state.seconds}
+          displayNumber={typeof window !== `undefined` ? window.innerWidth < 768 : false}
           thickness={5} />
         </div>
         <div className="countdown-container">
           <Countdown hours={this.state.hours} minutes={this.state.minutes} seconds={this.state.seconds}/>
         </div>
-        <div className="timeline-container" style={{marginTop: "10px", width: "100%", maxWidth: "600px"}}>
-          <Timeline dataSource={{sourceType: 'profile', screenName: 'hack_davis'}} options={{height: 400}}/>
+        <Scrollbars className="timeline-container" style={{marginTop: "10px", width: "100%", maxWidth: "600px"}}>
+        <div>
+          <Timeline dataSource={{sourceType: 'profile', screenName: 'hack_davis'}} options={{height: 350}}/>
         </div>
+        </Scrollbars>
         <div className="schedule-container">
           <Schedule data={this.props.data}/>
         </div>
-      </div>        
+      </div>
     )
   }
 clock() {
