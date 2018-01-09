@@ -26,7 +26,6 @@ const Header = () => {
     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <div className="navbar-nav justify-content-center">
         <Link exact to="/" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Home </Link>
-        <Link exact to="/map" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Map </Link>
         <Link exact to="/API" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> API </Link>
         <Link exact to="/hardware"onClick={collapseNav}  activeClassName="active" className="nav-item nav-link"> Hardware </Link>
         <Link exact to="/prizes" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Prizes </Link>
