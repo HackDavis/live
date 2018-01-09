@@ -40,11 +40,9 @@ class IndexPage extends React.Component {
         <div className="countdown-container">
           <Countdown hours={this.state.hours} minutes={this.state.minutes} seconds={this.state.seconds}/>
         </div>
-        <Scrollbars className="timeline-container" style={{marginTop: "10px", width: "100%", maxWidth: "600px"}}>
-        <div>
+        <div className="timeline-container">
           <Timeline dataSource={{sourceType: 'profile', screenName: 'hack_davis'}} options={{height: 350}}/>
         </div>
-        </Scrollbars>
         <div className="schedule-container">
           <Schedule data={this.props.data}/>
         </div>

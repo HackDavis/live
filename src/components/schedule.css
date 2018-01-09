@@ -49,7 +49,6 @@
     padding-left: 20px;
     margin-top: 2.7em;
     flex-basis: 40%;
-    overflow-y: auto;
 }
 .detail-component .card-title {
     margin-left: 0.1em;
