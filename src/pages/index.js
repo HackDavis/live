@@ -17,6 +17,7 @@ class IndexPage extends React.Component {
     }
   }
   render(){
+    const timelineHeight = 800;
     return (
       <div className="container-fluid index-container" style={{paddingTop: "15px"}}>
         <div className="end-container">
@@ -40,7 +41,7 @@ class IndexPage extends React.Component {
           <Countdown hours={this.state.hours} minutes={this.state.minutes} seconds={this.state.seconds}/>
         </div>
         <div className="timeline-container">
-          <Timeline dataSource={{sourceType: 'profile', screenName: 'hack_davis'}} options={{height: 350}}/>
+          <Timeline dataSource={{sourceType: 'profile', screenName: 'hack_davis'}} options={{height: timelineHeight}}/>
         </div>
         <div className="schedule-container">
           <Schedule data={this.props.data}/>

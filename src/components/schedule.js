@@ -7,7 +7,7 @@ import moment from 'moment';
 import ReactHTMLParser from 'react-html-parser';
 import { withPrefix } from 'gatsby-link'
 
-class Schedule extends React.Component {
+export default class Schedule extends React.Component {
     constructor(props) {
         super(props);
         this.Items = [];
@@ -45,7 +45,7 @@ class Schedule extends React.Component {
                 filter: i,
                 items: array
             })
-        }  
+        }
     }
     render() {
         return (
@@ -79,20 +79,20 @@ class Schedule extends React.Component {
                     );
                 }}
                 />
-                
+
             </div>
         )
     }
 }
-const NavPillItem = (props) => { 
+const NavPillItem = (props) => {
     function handle(){
         props.handler(props.text);
     }
     return (
         <div className="nav-item" onClick={handle}>
-            <a className={ "nav-link" + (props.filter === props.text ? " active" : "")} href="#">
+            <button className={ "btn btn-secondary" + (props.filter === props.text ? " active" : "")}>
                 {props.text}
-            </a>
+            </button>
         </div>
     )
 }
@@ -119,19 +119,17 @@ class ScheduleItem extends React.Component {
             <CSSTransitionGroup
                 transitionName="fade"
                 transitionEnterTimeout={800}
-                transitionLeaveTimeout={300}    
+                transitionLeaveTimeout={300}
             >
                 <div className="card list-card" onClick={this.handle.bind(this)}>
                     <div className="card-body list-body">
                         <div className="card-left">
-                            <h5 className="card-title">{this.props.item.title}</h5>
+                            <h4 className="card-title content">{this.props.item.title}</h4>
                         </div>
                         <div className="card-right">
-                            <p>{start.format("hh:mm A")}</p>
-                            <hr />
-                            <p>{end.format("hh:mm A")}</p>
+                            <p className="content">{start.format("hh:mm A")} - {end.format("hh:mm A")}</p>
                         </div>
-                        
+
                     </div>
                     <Media query={{maxWidth: 992}}
                         render={() => {
@@ -141,8 +139,8 @@ class ScheduleItem extends React.Component {
                 {
                     this.state.expanded ? <Media query={{maxWidth: 992}}
                         render={() => {
-                            return (<Detail start={start} 
-                                end={end} 
+                            return (<Detail start={start}
+                                end={end}
                                 title={this.props.item.title}
                                 description={this.props.item.html}/>);
                         }}
@@ -153,7 +151,7 @@ class ScheduleItem extends React.Component {
     }
 }
 const Detail = (props) => (
-    <div className="card">
+    <div id="description" className="card">
         <div className="card-body">
             <h1 className="card-title">{props.title}</h1>
             <h3 className="card-subtitle mb-2 text-muted">{props.start.format("Do MMM hh:mm A") + " - " + props.end.format("Do MMM hh:mm A")}</h3>
@@ -165,5 +163,3 @@ const Detail = (props) => (
         </div>
     </div>
 )
-
-export default Schedule

@@ -56,7 +56,7 @@ html::before, html::after{
 .index-container {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: 50px auto 500px;
+    grid-template-rows: 50px auto auto;
     grid-row-gap: 15px;
     grid-column-gap: 15px;
 }
@@ -99,10 +99,10 @@ html::before, html::after{
     }
     .timeline-container {
         grid-column: 9 / 12;
-        grid-row: 1 / 3;
+        grid-row: 1 / 4;
     }
     .schedule-container {
         grid-row: 3 / 4;
-        grid-column: 1 / 12;
+        grid-column: 1 / 9;
     }
 }
