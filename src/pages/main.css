@@ -108,7 +108,7 @@ html::before, html::after{
 @media(min-width: 992px) {
     .end-container{
         text-align: center;
-        grid-column: 4 / 10;
+        grid-column: 4 / 11;
         grid-row: 1 / 2;
     }
     .knob {
