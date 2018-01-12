@@ -61,7 +61,6 @@ export default class Schedule extends React.Component {
                     <div className="card-group list-container">
                         <dt>Jan 20</dt>
                         {this.state.items.map((v, i) => {
-                          console.log(v.category)
                             if(v.start.date() == 20) return (<ScheduleItem className={v.category} active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                         <dt>Jan 21</dt>
@@ -91,7 +90,7 @@ const NavPillItem = (props) => {
     }
     return (
         <div className="nav-item" onClick={handle}>
-            <button className={ "btn btn-secondary" + (props.filter === props.text ? " active" : "")}>
+            <button className={ "btn btn-outline-primary" + (props.filter === props.text ? " active" : "")}>
                 {props.text}
             </button>
         </div>

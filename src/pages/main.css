@@ -19,7 +19,7 @@ html::before, html::after{
 }
 
 /* Categories for schedule table*/
-.Workshop {
+.Workshops {
   background-color: #78bfd4;
 }
 
@@ -29,6 +29,10 @@ html::before, html::after{
 
 .Logistics {
   background-color: LightSteelBlue;
+}
+
+.list-component button {
+  margin-right: 2px;
 }
 
 .timeline-container {

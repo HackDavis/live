@@ -3,7 +3,7 @@ start: "2018-01-20T17:30:00"
 end: "2018-01-20T18:30:00"
 title: "OSIsoft"
 host: "osisoft"
-category: "Workshop"
+category: "Workshops"
 link: "Schedule"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et felis rhoncus, tempor enim nec, dictum felis. Phasellus a justo nunc. Nunc pharetra egestas odio, nec tempus tellus. Nullam bibendum ultrices lobortis. Nulla tristique viverra diam a sollicitudin. Praesent luctus venenatis lacus, ut tincidunt metus gravida eu. In elit ligula, porta a vulputate eget, congue sed eros.
