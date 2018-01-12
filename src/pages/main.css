@@ -36,7 +36,10 @@ html::before, html::after{
 }
 
 .timeline-container {
-    height: 100%;
+    height: 70vh;
+    border-style: solid;
+    border-image: linear-gradient(to right, #b766ad 0%,#945ebe 60%, #8d64bb 61%, #55419c 100%);
+    border-image-slice: 1;
     overflow-y: hidden;
 }
 @media(max-width: 768px) {
