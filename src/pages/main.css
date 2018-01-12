@@ -18,6 +18,19 @@ html::before, html::after{
     flex-direction: column;
 }
 
+/* Categories for schedule table*/
+.Workshop {
+  background-color: #78bfd4;
+}
+
+.Meals {
+  background-color: Lavender;
+}
+
+.Logistics {
+  background-color: LightSteelBlue;
+}
+
 .timeline-container {
     height: 100%;
     overflow-y: hidden;

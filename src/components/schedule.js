@@ -61,11 +61,12 @@ export default class Schedule extends React.Component {
                     <div className="card-group list-container">
                         <dt>Jan 20</dt>
                         {this.state.items.map((v, i) => {
-                            if(v.start.date() == 20) return (<ScheduleItem active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
+                          console.log(v.category)
+                            if(v.start.date() == 20) return (<ScheduleItem className={v.category} active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                         <dt>Jan 21</dt>
                         {this.state.items.map((v, i) => {
-                            if(v.start.date() == 21)return (<ScheduleItem active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
+                            if(v.start.date() == 21) return (<ScheduleItem className={v.category} active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                     </div>
                 </div>
@@ -121,7 +122,7 @@ class ScheduleItem extends React.Component {
                 transitionEnterTimeout={800}
                 transitionLeaveTimeout={300}
             >
-                <div className="card list-card" onClick={this.handle.bind(this)}>
+                <div className={ "card list-card " + this.props.className} onClick={this.handle.bind(this)}>
                     <div className="card-body list-body">
                         <div className="card-left">
                             <h4 className="card-title content">{this.props.item.title}</h4>

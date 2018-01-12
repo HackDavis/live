@@ -79,7 +79,7 @@ componentWillUnmount() {
 export default IndexPage
 export const pageQuery = graphql`
 query index{
-  allMarkdownRemark (filter:{frontmatter:{link:{eq: "Schedule"}}} sort:{fields:[frontmatter___start] ,order:ASC}){
+  allMarkdownRemark (filter:{frontmatter:{link:{eq: "Schedule"}}} sort:{fields:[frontmatter___start, frontmatter___end] ,order:ASC}){
     edges{
       node{
         frontmatter{
