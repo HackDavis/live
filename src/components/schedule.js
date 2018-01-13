@@ -43,7 +43,8 @@ export default class Schedule extends React.Component {
             let array = this.Items.filter((t) => {return i === `All` || t.category === i});
             this.setState({
                 filter: i,
-                items: array
+                items: array,
+                detailIndex: 0
             })
         }
     }
