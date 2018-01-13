@@ -13,13 +13,15 @@
     "jquery": "^3.2.1",
     "moment": "^2.20.1",
     "popper.js": "^1.13.0",
+    "react-bootstrap": "^0.32.0",
     "react-custom-scrollbars": "^4.2.1",
     "react-html-parser": "^2.0.2",
     "react-icons": "^2.2.7",
     "react-media": "^1.6.1",
     "react-time-knob": "^0.1.4",
     "react-transition-group": "^1.2.1",
-    "react-twitter-widgets": "^1.7.1"
+    "react-twitter-widgets": "^1.7.1",
+    "react-zoomable-image": "^1.0.5"
   },
   "keywords": [
     "gatsby"

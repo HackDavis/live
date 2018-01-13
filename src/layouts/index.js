@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import Alert from '../components/alert.js'
+import { DropdownButton } from 'react-bootstrap';
+import { MenuItem } from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import $ from 'jquery'
@@ -25,10 +27,11 @@ const Header = () => {
     </button>
     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <div className="navbar-nav justify-content-center">
+
         <Link exact to="/" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Home </Link>
+        <Link exact to="/map" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Map </Link>
         <Link exact to="/API" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> API </Link>
         <Link exact to="/hardware"onClick={collapseNav}  activeClassName="active" className="nav-item nav-link"> Hardware </Link>
-        <Link exact to="/prizes" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Prizes </Link>
         <a target="_blank" href="http://help.hackdavis.io" className="nav-item nav-link"> Help Queue </a>
         <a target="_blank" href="http://devpost.com" className="nav-item nav-link"> Devpost </a>
       </div>
