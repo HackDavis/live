@@ -16,6 +16,7 @@
 }
 #description {
   margin-bottom: 30px;
+  border-width: 2px;
 }
 .detail-component .card-title {
     margin-left: 0.1em;
