@@ -35,6 +35,15 @@ html::before, html::after{
   margin-right: 2px;
 }
 
+.btn-outline-primary:not([disabled]):not(.disabled).active {
+  color: white;
+  box-shadow: none;
+}
+
+.btn-outline-primary:not([disabled]):not(.disabled).active:hover {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .5)
+}
+
 .timeline-container {
     height: auto;
     border-style: solid;
