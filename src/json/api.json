@@ -1,0 +1,23 @@
+{
+    "calhs": {
+       "title": "California Health Services" 
+    },
+    "gcloud": {
+        "title": "Google Cloud"
+    },
+    "intel": {
+        "title": "Intel"
+    },
+    "keysight": {
+        "title": "Keysight"
+    },
+    "kpmg": {
+        "title": "KPMG"
+    },
+    "osisoft": {
+        "title": "OSISoft"
+    },
+    "genability": {
+        "title": "Genability"
+    }
+}
