@@ -1,0 +1,14 @@
+.api-container .card {
+    border-radius: 0;
+    position: relative;
+}
+.api-container .card-circle {
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    top: 50%;
+    margin-top: -50px;
+    left: 50%;
+}
