@@ -1,4 +1,0 @@
----
-title: "Genability"
-link: "API"
----

@@ -1,4 +1,5 @@
 import React from 'react'
+import API from '../json/api.json'
 
 const API = () => (
   <div className="container">
@@ -7,21 +8,3 @@ const API = () => (
 )
 
 export default API
-export const pageQuery = graphql`
-query API{
-  allMarkdownRemark (filter:{frontmatter:{link:{eq: "API"}}} sort:{fields:[frontmatter___title] ,order:ASC}){
-    edges{
-      node{
-        frontmatter{
-          title
-          category
-          start
-          end
-          host
-        }
-        html
-      }
-    }
-  }
-}
-`
