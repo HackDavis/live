@@ -18,6 +18,14 @@ html::before, html::after{
     flex-direction: column;
 }
 
+.index-container {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: 50px auto 75vh;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+
 .list-component button {
   margin-right: 2px;
 }
@@ -37,12 +45,12 @@ html::before, html::after{
     border-image: linear-gradient(to right, #b766ad 0%,#945ebe 60%, #8d64bb 61%, #55419c 100%);
     border-image-slice: 1;
     overflow-y: hidden;
-    margin-top: 2.7em;
+    margin-top: 0;
     margin-bottom: 1em;
 }
 @media(max-width: 768px) {
     .index-container {
-        grid-template-rows: 50px auto 1fr 400px;
+        grid-template-rows: 50px auto 1fr 800px;
     }
   .knob {
     max-width: 400px;
@@ -64,19 +72,12 @@ html::before, html::after{
     .timeline-container {
         grid-column: 1 / 12;
         grid-row: 4 / 5;
-        justify-self: center;
+        height: 100%;
     }
     .schedule-container {
         grid-column: 1 / 12;
         grid-row: 3 / 4;
     }
-}
-.index-container {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: 50px auto 75vh;
-    grid-row-gap: 15px;
-    grid-column-gap: 15px;
 }
 @media(min-width: 768px) {
     .end-container{
@@ -118,6 +119,7 @@ html::before, html::after{
     .timeline-container {
         grid-column: 9 / 12;
         grid-row: 3 / 4;
+        margin-top: 2.7em;
     }
     .schedule-container {
         grid-row: 3 / 4;

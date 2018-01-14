@@ -21,6 +21,11 @@
 .detail-component .card-title {
     margin-left: 0.1em;
 }
+@media(max-width: 768px) {
+    #description {
+        margin-bottom: 0;
+    }
+}
 @media(max-width:992px){
     .list-component{
         flex-basis: 100%;
@@ -41,13 +46,14 @@
     overflow-y: auto;
     flex-wrap: nowrap;
     margin-bottom: 20px;
+    border-bottom: 2px solid rgba(0,0,0,0.25);
 }
 .list-container dt{
-    top: 0px;
+    top: -1px;
     position: sticky;
     z-index: 2;
     padding-left: 15px;
-    background-color: #e9e9e9
+    background-color: #e9e9e9;
 }
 .list-card {
     height: auto;

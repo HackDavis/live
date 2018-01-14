@@ -18,7 +18,9 @@ const SponsorCard = (props) => (
 const API = () => (
   <div className="container api-container">
     <h1>API</h1>
-    <SponsorCard title={"HackDavis"} text={"Hi there"} />
+    {Object.values(apiList).map(v => {
+      return (<SponsorCard title={v.title} text={v.text} />);
+    })}
   </div>
 )
 
