@@ -18,19 +18,6 @@ html::before, html::after{
     flex-direction: column;
 }
 
-/* Categories for schedule table*/
-.Workshops {
-  background-color: #78bfd4;
-}
-
-.Meals {
-  background-color: Lavender;
-}
-
-.Logistics {
-  background-color: LightSteelBlue;
-}
-
 .list-component button {
   margin-right: 2px;
 }
