@@ -38,6 +38,15 @@ export default class Schedule extends React.Component {
             });
         }
     }
+    //This will return the color for each card and list item depending on its associated category
+    determineColor(category){
+      switch(category){
+        case 'Workshops': return '#78bfd4';
+        case 'Meals': return 'Lavender';
+        case 'Logistics': return 'LightSteelBlue';
+        case 'Fun': return 'Pink';
+      }
+    }
     switchActiveSet(i) {
         if(i) {
             let array = this.Items.filter((t) => {return i === `All` || t.category === i});
@@ -62,20 +71,22 @@ export default class Schedule extends React.Component {
                     <div className="card-group list-container">
                         <dt>Jan 20</dt>
                         {this.state.items.map((v, i) => {
-                            if(v.start.date() == 20) return (<ScheduleItem className={v.category} active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
+                            if(v.start.date() == 20) return (<ScheduleItem color={this.determineColor(v.category)} active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                         <dt>Jan 21</dt>
                         {this.state.items.map((v, i) => {
-                            if(v.start.date() == 21) return (<ScheduleItem className={v.category} active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
+                            if(v.start.date() == 21) return (<ScheduleItem color={this.determineColor(v.category)} active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                     </div>
                 </div>
                 <Media query={{minWidth: 992}}
                 render={() => {
+                    const event = this.state.items[this.state.detailIndex];
+                    const color = this.determineColor(event.category);
                     return (
                         <div className="detail-component">
-                            <Detail start={this.state.items[this.state.detailIndex].start} end={this.state.items[this.state.detailIndex].end} title={this.state.items[this.state.detailIndex].title}
-                            description={this.state.items[this.state.detailIndex].html}/>
+                            <Detail start={event.start} end={event.end} title={event.title}
+                            description={event.html} color={color}/>
                         </div>
                     );
                 }}
@@ -122,7 +133,7 @@ class ScheduleItem extends React.Component {
                 transitionEnterTimeout={800}
                 transitionLeaveTimeout={300}
             >
-                <div className={ "card list-card " + this.props.className} onClick={this.handle.bind(this)}>
+                <div className={ "card list-card"} style={{backgroundColor: this.props.color}} onClick={this.handle.bind(this)}>
                     <div className="card-body list-body">
                         <div className="card-left">
                             <h4 className="card-title content">{this.props.item.title}</h4>
@@ -152,9 +163,9 @@ class ScheduleItem extends React.Component {
     }
 }
 const Detail = (props) => (
-    <div id="description" className="card">
+    <div id="description" className="card" style={{borderColor: props.color}}>
         <div className="card-body">
-            <h1 className="card-title">{props.title}</h1>
+            <h1 className="card-title" style={{color: props.color}}>{props.title}</h1>
             <h3 className="card-subtitle mb-2 text-muted">{props.start.format("Do MMM hh:mm A") + " - " + props.end.format("Do MMM hh:mm A")}</h3>
             <div>{ReactHTMLParser(props.description, {transform: (node) => {
                 if(node.type === 'tag' && node.name === 'img') {
