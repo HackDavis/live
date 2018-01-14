@@ -1,5 +1,5 @@
 import React from 'react'
-import API from '../json/api.json'
+import JSON from '../json/api.json'
 
 const API = () => (
   <div className="container">
