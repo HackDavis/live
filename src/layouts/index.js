@@ -73,7 +73,6 @@ class TemplateWrapper extends React.Component {
   }
   checkGist() {
     fetch("http://getschedulehelper.com/alerts.json", {cache: 'reload'}).then((response) => {
-      console.log(response)
       response.json().then((alert) => {
         this.setState({
           children: this.state.children,
