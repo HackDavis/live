@@ -3,14 +3,19 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import Alert from '../components/alert.js'
-import { DropdownButton } from 'react-bootstrap';
-import { MenuItem } from 'react-bootstrap';
+import Media from 'react-media'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import $ from 'jquery'
   //if(typeof window !== 'undefined'){ require('bootstrap/dist/js/bootstrap.min.js') }
 import Collapse from '../vendor/collapse';
-if( typeof window !== `undefined` ) Collapse($);
+import Dropdown from '../vendor/dropdown';
+
+if( typeof window !== `undefined` ){
+  Collapse($);
+  Dropdown($);
+}
+
 
 import './index.css'
 import './nav.css'
@@ -28,12 +33,30 @@ const Header = () => {
     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <div className="navbar-nav justify-content-center">
 
-        <Link exact to="/" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Home </Link>
-        <Link exact to="/map" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Map </Link>
-        <Link exact to="/API" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> API </Link>
-        <Link exact to="/hardware"onClick={collapseNav}  activeClassName="active" className="nav-item nav-link"> Hardware </Link>
-        <a target="_blank" href="http://help.hackdavis.io" className="nav-item nav-link"> Help Queue </a>
-        <a target="_blank" href="http://devpost.com" className="nav-item nav-link"> Devpost </a>
+        <div className="nav-item"><Link exact to="/" onClick={collapseNav} activeClassName="active" className="nav-link"> Home </Link></div>
+        <div className="nav-item"><Link exact to="/map" onClick={collapseNav} activeClassName="active" className="nav-link"> Map </Link></div>
+        <Media query={{minWidth: 768}}
+          render={() => (
+            <div className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">         Tech </a>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <Link exact to="/hardware"onClick={collapseNav}  activeClassName="active" className="dropdown-item"> Hardware </Link>
+                <Link exact to="/API" onClick={collapseNav} activeClassName="active" className="dropdown-item"> API </Link>
+              </div>
+            </div>
+          )}
+        />
+        <Media query={{maxWidth: 768}} 
+          render={() => (
+            <div className="nav-item"><Link exact to="/hardware"onClick={collapseNav}  activeClassName="active" className="nav-link"> Hardware </Link></div>
+          )}
+        />
+        <Media query={{maxWidth: 768}}
+          render={() => (
+            <div className="nav-item"><Link exact to="/API" onClick={collapseNav} activeClassName="active" className="nav-link"> API </Link></div>
+          )} />
+        <div className="nav-item"><a target="_blank" href="http://help.hackdavis.io" className="nav-link"> Help Queue </a></div>
+        <div className="nav-item"><a target="_blank" href="http://devpost.com" className="nav-link"> Devpost </a></div>
       </div>
     </div>
   </nav>

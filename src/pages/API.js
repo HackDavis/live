@@ -18,8 +18,8 @@ const SponsorCard = (props) => (
 const API = () => (
   <div className="container api-container">
     <h1>API</h1>
-    {Object.values(apiList).map(v => {
-      return (<SponsorCard title={v.title} text={v.text} />);
+    {Object.values(apiList).map((v, i) => {
+      return (<SponsorCard key={i} title={v.title} text={v.text} />);
     })}
   </div>
 )

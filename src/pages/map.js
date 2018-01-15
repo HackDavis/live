@@ -6,7 +6,7 @@ if(typeof window !== `undefined`){
   ZoomableImage = require('react-zoomable-image').default;
 }
 const MAP = () => (
-        <div style={{display: 'flex', justifyContent: 'center'}}>>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
          <ZoomableImage
            baseImage={{
              alt: 'An image',
