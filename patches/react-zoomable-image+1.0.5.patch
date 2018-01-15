@@ -1,0 +1,21 @@
+patch-package
+--- a/node_modules/react-zoomable-image/build/index.js
++++ b/node_modules/react-zoomable-image/build/index.js
+@@ -851,6 +851,7 @@ var ZoomableImage = function (_Component) {
+ 
+     _this.removeBodyClickHandlers = function () {
+       if (document && document.querySelector) {
++        if (!_this.bodyElement) _this.bodyElement = document.querySelector('body');
+         _this.bodyClickHandlers.forEach(function (handler) {
+           var _this$bodyElement2;
+ 
+--- a/node_modules/react-zoomable-image/src/index.jsx
++++ b/node_modules/react-zoomable-image/src/index.jsx
+@@ -232,6 +232,7 @@ class ZoomableImage extends Component {
+ 
+   removeBodyClickHandlers = () => {
+     if (document && document.querySelector) {
++      if (!this.bodyElement) this.bodyElement = document.querySelector('body');
+       this.bodyClickHandlers.forEach((handler) => {
+         this.bodyElement.removeEventListener(...handler);
+       });

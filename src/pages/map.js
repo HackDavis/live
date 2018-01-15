@@ -1,6 +1,10 @@
 import React from 'react'
-import ZoomableImage from 'react-zoomable-image';
-
+var ZoomableImage = () => (
+  <div></div>
+)
+if(typeof window !== `undefined`){
+  ZoomableImage = require('react-zoomable-image').default;
+}
 const MAP = () => (
         <div style={{display: 'flex', justifyContent: 'center'}}>>
          <ZoomableImage
