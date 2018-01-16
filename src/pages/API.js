@@ -1,6 +1,7 @@
 import React from 'react'
 import apiList from '../json/api.json'
 import './API.css'
+import './tech.css'
 
 const SponsorCard = (props) => (
   <div className="card">
@@ -16,11 +17,17 @@ const SponsorCard = (props) => (
 );
 
 const API = () => (
-  <div className="container api-container">
-    <h1>API</h1>
-    {Object.values(apiList).map((v, i) => {
-      return (<SponsorCard key={i} title={v.title} text={v.text} />);
-    })}
+  <div>
+    <div className="hero">
+        <h1>Checkout Hardware from MLH Labs</h1>
+        <a href="http://hardware.mlh.io"><button className="round-button white-button">Register</button></a>
+    </div>
+    <div className="container api-container">
+      <h1>API</h1>
+      {Object.values(apiList).map((v, i) => {
+        return (<SponsorCard key={i} title={v.title} text={v.text} />);
+      })}
+    </div>
   </div>
 )
 
