@@ -41,9 +41,9 @@ export default class Schedule extends React.Component {
     //This will return the color for each card and list item depending on its associated category
     determineColor(category){
       switch(category){
-        case 'Workshops': return '#78bfd4';
-        case 'Meals': return 'Lavender';
-        case 'Logistics': return 'LightSteelBlue';
+        case 'Workshops': return '#62cceabf';
+        case 'Meals': return 'rgba(142, 146, 255, 1)';
+        case 'Logistics': return 'rgba(152, 192, 245, 1)';
         case 'Fun': return 'Pink';
       }
     }
