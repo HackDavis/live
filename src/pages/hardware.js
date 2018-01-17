@@ -1,5 +1,5 @@
 import React from 'react'
-import './hardware.css'
+import './tech.css'
 
 const Hardware = ({data}) => {
     const { markdownRemark } = data; // data.markdownRemark holds our post data
@@ -10,7 +10,7 @@ const Hardware = ({data}) => {
                 <h1>Checkout Hardware from MLH Labs</h1>
                 <a href="http://hardware.mlh.io"><button className="round-button white-button">Register</button></a>
             </div>
-            <div className="hardware-content">
+            <div className="tech-content">
                 <div className="container">
                     <div dangerouslySetInnerHTML={{ __html: html }}></div>
                 </div>
