@@ -19,6 +19,7 @@ html::before, html::after{
 }
 
 .index-container {
+    min-width: 1600px;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: 50px auto 75vh;
@@ -117,12 +118,12 @@ html::before, html::after{
         grid-row: 2 / 3;
     }
     .timeline-container {
-        grid-column: 9 / 12;
+        grid-column: 8 / 11;
         grid-row: 3 / 4;
         margin-top: 2.7em;
     }
     .schedule-container {
         grid-row: 3 / 4;
-        grid-column: 1 / 9;
+        grid-column: 2 / 8;
     }
 }

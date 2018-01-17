@@ -79,19 +79,6 @@ export default class Schedule extends React.Component {
                         })}
                     </div>
                 </div>
-                <Media query={{minWidth: 992}}
-                render={() => {
-                    const event = this.state.items[this.state.detailIndex];
-                    const color = this.determineColor(event.category);
-                    return (
-                        <div className="detail-component">
-                            <Detail start={event.start} end={event.end} title={event.title}
-                            description={event.html} color={color}/>
-                        </div>
-                    );
-                }}
-                />
-
             </div>
         )
     }
