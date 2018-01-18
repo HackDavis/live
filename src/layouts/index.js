@@ -33,12 +33,12 @@ const Header = () => {
     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <div className="navbar-nav justify-content-center">
 
-        <div className="nav-item"><Link exact to="/" onClick={collapseNav} activeClassName="active" className="nav-link"> Home </Link></div>
-        <div className="nav-item"><Link exact to="/map" onClick={collapseNav} activeClassName="active" className="nav-link"> Map </Link></div>
-        <div className="nav-item"><Link exact to="/hardware" onClick={collapseNav} activeClassName="active" className="nav-link"> Hardware </Link></div>
-        <div className="nav-item"><Link exact to="/API" onClick={collapseNav} activeClassName="active" className="nav-link"> API </Link></div>
-        <div className="nav-item"><a target="_blank" href="http://help.hackdavis.io" className="nav-link"> Help </a></div>
-        <div className="nav-item"><a target="_blank" href="http://devpost.com" className="nav-link"> Devpost </a></div>
+        <Link exact to="/" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Home </Link>
+        <Link exact to="/map" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Map </Link>
+        <Link exact to="/hardware" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Hardware </Link>
+        <Link exact to="/API" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> API </Link>
+        <a target="_blank" href="http://help.hackdavis.io" className="nav-item nav-link"> Help </a>
+        <a target="_blank" href="http://devpost.com" className="nav-item nav-link"> Devpost </a>
       </div>
     </div>
   </nav>

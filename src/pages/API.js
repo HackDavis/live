@@ -21,14 +21,18 @@ const API = () => (
     <div className="hero">
         <h1>APIs and Prizes</h1>
     </div>
-    <div className="container api-container">
-      <div className="row justify-content-around">
-        {Object.values(apiList).map((v, i) => {
-          return (
-            <div key={i} className="col-lg-4 col-md-6">
-              <SponsorCard title={v.title} text={v.text} />
-            </div>);
-        })}
+    <div style={{backgroundColor: "rgb(228, 228, 228)"}}>
+      <div className="tech-content">
+        <div className="container api-container">
+          <div className="row justify-content-around">
+            {Object.values(apiList).map((v, i) => {
+              return (
+                <div key={i} className="col-lg-4 col-md-6">
+                  <SponsorCard title={v.title} text={v.text} />
+                </div>);
+            })}
+          </div>
+        </div>
       </div>
     </div>
   </div>
