@@ -19,8 +19,7 @@ const SponsorCard = (props) => (
 const API = () => (
   <div>
     <div className="hero">
-        <h1>Checkout Hardware from MLH Labs</h1>
-        <a href="http://hardware.mlh.io"><button className="round-button white-button">Register</button></a>
+        <h1>APIs and Prizes</h1>
     </div>
     <div className="container api-container">
       <h1>API</h1>
