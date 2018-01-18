@@ -133,21 +133,7 @@ class ScheduleItem extends React.Component {
                         </div>
 
                     </div>
-                    <Media query={{maxWidth: 992}}
-                        render={() => {
-                            return (<div style={{textAlign:"center"}}><Arrow height="1.5em" width="1.5em"/></div>)
-                        }} />
                 </div>
-                {
-                    this.state.expanded ? <Media query={{maxWidth: 992}}
-                        render={() => {
-                            return (<Detail start={start}
-                                end={end}
-                                title={this.props.item.title}
-                                description={this.props.item.html}/>);
-                        }}
-                    /> : null
-                }
             </CSSTransitionGroup>
         );
     }
