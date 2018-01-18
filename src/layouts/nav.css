@@ -41,8 +41,6 @@
 }
 #nav .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 1);
-    padding-top: 0;
-    padding-bottom: 0;
 }
 #mlh-trust-badge {
     position: fixed;
@@ -64,8 +62,8 @@
     font-size: 25px;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 0.5em !important;
-    padding-right: 0.5em !important;
+    padding-left: 0.75em !important;
+    padding-right: 0.75em !important;
     color: white !important;
     font-family: inherit;
     text-decoration: none;

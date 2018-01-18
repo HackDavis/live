@@ -47,7 +47,7 @@ html::before, html::after{
   box-shadow: none;
 }
 
-.btn-outline-primary:not([disabled]):not(.disabled).active:hover {
+.btn-outline-primary:not([disabled]):not(.disabled):not(.active):hover {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .5)
 }
 

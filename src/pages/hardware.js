@@ -11,7 +11,7 @@ const Hardware = ({data}) => {
                 <a href="http://hardware.mlh.io"><button className="round-button white-button">Register</button></a>
             </div>
             <div className="tech-content">
-                <div className="container">
+                <div className="container" style={{paddingTop: "5rem"}}>
                     <div dangerouslySetInnerHTML={{ __html: html }}></div>
                 </div>
             </div>
