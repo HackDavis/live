@@ -10,7 +10,7 @@ var divStyle = {
 const MAP = () => (
 <div className="container">
   <div style={divStyle}>
-    <a href={"http://getschedulehelper.com/hackdavis/mapzoom.jpg"} target={"_blank"}><img id={"mymap"} src={mappic}/></a>
+    <a href={mappic} target="_blank"><img id="mymap" src={mappic}/></a>
   </div>
 </div>
 

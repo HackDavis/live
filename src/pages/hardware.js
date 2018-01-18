@@ -5,7 +5,7 @@ const Hardware = ({data}) => {
     const { markdownRemark } = data; // data.markdownRemark holds our post data
     const { frontmatter, html } = markdownRemark;
     return (
-        <div style={{backgroundColor: "rgb(228, 228, 228)"}}>
+        <div>
             <div className="hero">
                 <h1>Checkout Hardware from MLH Labs</h1>
                 <a href="http://hardware.mlh.io"><button className="round-button white-button">Register</button></a>

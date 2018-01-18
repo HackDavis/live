@@ -15,13 +15,25 @@
     flex-shrink: 0;
 }
 
+.api-container .card .card-header > h1 {
+    padding-top: 0.5rem;
+}
+
 .api-container .card-body {
     padding-top: 3rem;
     font-size: 0.75em;
 }
-.api-container .card .card-header > h1 {
-    padding-top: 0.5rem;
+
+.api-container .card-body > p:last-child {
+    margin-top: 0.5em;
+    margin-bottom: 0;
 }
+
+.api-container .card-body > p > i {
+    margin-right: 0.5em;
+    color: #ffad2f;
+}
+
 .api-container {
     padding-top: 2em;
 }
@@ -36,4 +48,13 @@
     margin-left: -2.5em;
     background-color: white;
     border: 1px solid black;
+}
+
+.top3 {
+    border-top: 1px solid rgba(0, 0, 0, 0.178);
+    border-bottom: 1px solid black;
+}
+
+.top3 i {
+    font-size: 10rem;
 }
