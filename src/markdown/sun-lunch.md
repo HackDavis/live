@@ -6,4 +6,4 @@ host: ""
 category: "Meals"
 link: "Schedule"
 ---
-Mmmmhhhmmm Tasty
+From Open Rice Kitchen Provided by JoyRun

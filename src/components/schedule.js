@@ -41,9 +41,9 @@ export default class Schedule extends React.Component {
     //This will return the color for each card and list item depending on its associated category
     determineColor(category){
       switch(category){
-        case 'Workshops': return '#78bfd4';
-        case 'Meals': return 'Lavender';
-        case 'Logistics': return 'LightSteelBlue';
+        case 'Workshops': return '#62cceabf';
+        case 'Meals': return 'rgba(142, 146, 255, 1)';
+        case 'Logistics': return 'rgba(152, 192, 245, 1)';
         case 'Fun': return 'Pink';
       }
     }
@@ -71,6 +71,7 @@ export default class Schedule extends React.Component {
                     <div className="card-group list-container">
                         <dt>Jan 20</dt>
                         {this.state.items.map((v, i) => {
+                          console.log(v)
                             if(v.start.date() == 20) return (<ScheduleItem color={this.determineColor(v.category)} active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                         <dt>Jan 21</dt>
@@ -79,19 +80,6 @@ export default class Schedule extends React.Component {
                         })}
                     </div>
                 </div>
-                <Media query={{minWidth: 992}}
-                render={() => {
-                    const event = this.state.items[this.state.detailIndex];
-                    const color = this.determineColor(event.category);
-                    return (
-                        <div className="detail-component">
-                            <Detail start={event.start} end={event.end} title={event.title}
-                            description={event.html} color={color}/>
-                        </div>
-                    );
-                }}
-                />
-
             </div>
         )
     }
@@ -136,28 +124,15 @@ class ScheduleItem extends React.Component {
                 <div className={ "card list-card"} style={{backgroundColor: this.props.color}} onClick={this.handle.bind(this)}>
                     <div className="card-body list-body">
                         <div className="card-left">
-                            <h4 className="card-title content">{this.props.item.title}</h4>
+                            <h4 className="card-title">{this.props.item.title}</h4>
+                            <div className="card-description">{ReactHTMLParser(this.props.item.html)}</div>
                         </div>
                         <div className="card-right">
                             <p className="content">{start.format("hh:mm A")} - {end.format("hh:mm A")}</p>
                         </div>
 
                     </div>
-                    <Media query={{maxWidth: 992}}
-                        render={() => {
-                            return (<div style={{textAlign:"center"}}><Arrow height="1.5em" width="1.5em"/></div>)
-                        }} />
                 </div>
-                {
-                    this.state.expanded ? <Media query={{maxWidth: 992}}
-                        render={() => {
-                            return (<Detail start={start}
-                                end={end}
-                                title={this.props.item.title}
-                                description={this.props.item.html}/>);
-                        }}
-                    /> : null
-                }
             </CSSTransitionGroup>
         );
     }

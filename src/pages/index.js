@@ -19,7 +19,7 @@ class IndexPage extends React.Component {
   render(){
     const timelineHeight = 800;
     return (
-      <div className="container-fluid index-container" style={{paddingTop: "15px"}}>
+      <div className="container index-container" style={{paddingTop: "15px"}}>
         <div className="end-container">
           <h1 style={{textAlign: "center", color: "#55419c"}}>HackDavis ends in: </h1>
         </div>
