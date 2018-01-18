@@ -6,3 +6,4 @@ host: ""
 category: "Logistics"
 link: "Schedule"
 ---
+Show off your projects for a chance to win!
