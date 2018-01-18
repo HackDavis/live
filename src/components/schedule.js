@@ -42,7 +42,7 @@ export default class Schedule extends React.Component {
     determineColor(category){
       switch(category){
         case 'Workshops': return '#62cceabf';
-        case 'Meals': return 'rgba(142, 146, 255, 1)';
+        case 'Meals': return '#b6b9ff';
         case 'Logistics': return 'rgba(152, 192, 245, 1)';
         case 'Fun': return 'Pink';
       }
