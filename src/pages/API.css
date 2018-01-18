@@ -1,15 +1,18 @@
 .api-container .card {
     border-radius: 0;
     min-width: 10em;
-    height: 15em;
+    min-height: 17em;
     margin-bottom: 1em;
     position: relative;
 }
-
+.api-container p {
+    margin-bottom: 0.5em;
+}
 .api-container .card .card-header {
     background-color: #41699c;
     color: #ffffff;
     height: 6em;
+    flex-shrink: 0;
 }
 
 .api-container .card-body {

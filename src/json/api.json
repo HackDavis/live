@@ -1,12 +1,15 @@
 {
     "calhs": {
-       "title": "California Health Services" 
+       "title": "California Health Services"
     },
     "gcloud": {
         "title": "Google Cloud"
     },
     "intel": {
-        "title": "Intel"
+        "title": "Intel AI DevCloud",
+        "text": "A cloud hosted hardware and software platform available to developers, researchers and startups to learn, sandbox and get started on their Artificial Intelligence projects.",
+        "href": "https://ai.intel.com/devcloud/",
+        "prize": "Best Use of DevCloud"
     },
     "keysight": {
         "title": "Keysight"
