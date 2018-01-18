@@ -124,11 +124,12 @@ class ScheduleItem extends React.Component {
                 <div className={ "card list-card"} style={{backgroundColor: this.props.color}} onClick={this.handle.bind(this)}>
                     <div className="card-body list-body">
                         <div className="card-left">
-                            <h4 className="card-title content">{this.props.item.title}</h4>
+                            <h4 className="card-title">{this.props.item.title}</h4>
+                            {ReactHTMLParser(this.props.item.html)}
                         </div>
                         <div className="card-right">
                             <p className="content">{start.format("hh:mm A")} - {end.format("hh:mm A")}</p>
-                              {ReactHTMLParser(this.props.item.html)}
+
                         </div>
 
                     </div>

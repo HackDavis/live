@@ -24,6 +24,9 @@
 .detail-component .card-title {
     margin-left: 0.1em;
 }
+.card-title {
+  font-size: 1.3rem;
+}
 @media(max-width: 768px) {
     #description {
         margin-bottom: 0;
@@ -80,6 +83,7 @@
     flex-direction: column;
 }
 .card-right p {
+    font-size: 20px;
     align-self: flex-end;
 }
 .content {
