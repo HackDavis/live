@@ -55,6 +55,10 @@
     border-bottom: 1px solid black;
 }
 
+.top3 h1 {
+    font-size: 1.5rem;
+}
+
 .top3 i {
     font-size: 10rem;
 }

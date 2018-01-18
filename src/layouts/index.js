@@ -37,8 +37,7 @@ const Header = () => {
         <Link exact to="/" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Home </Link>
         <Link exact to="/map" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Map </Link>
         <Link exact to="/hardware" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Hardware </Link>
-        <Link exact to="/API" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> API </Link>
-        <a target="_blank" href="http://help.hackdavis.io" className="nav-item nav-link"> Help </a>
+        <a target="_blank" href="http://help.hackdavis.io" className="nav-item nav-link"> Mentor </a>
         <a target="_blank" href="http://devpost.com" className="nav-item nav-link"> Devpost </a>
         <a target="_blank" href="https://hackdavis-2018.slack.com/" className="nav-item nav-link"> <i className="fa fa-slack" aria-hidden="true"></i> </a>
       </div>
