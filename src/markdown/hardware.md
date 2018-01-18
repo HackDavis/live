@@ -2,7 +2,7 @@
 path: "hardware"
 title: "Hardware from MLH"
 ---
-We have a lot of hardware to offer
+Hardware Rental
 ===
 You will be able to rent out any piece of hardware from the lab by exchanging your government ID, and when you return the hardware at the end of the hackathon, your ID will be given back to you.
 
