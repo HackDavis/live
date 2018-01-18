@@ -6,6 +6,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
     "gatsby": "^1.9.149",
+    "gatsby-cli": "^1.1.28",
     "gatsby-link": "^1.6.32",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-source-filesystem": "^1.5.11",
