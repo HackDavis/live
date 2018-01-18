@@ -24,8 +24,10 @@
 .detail-component .card-title {
     margin-left: 0.1em;
 }
+/* Overwrite bootstrap */
 .card-title {
   font-size: 1.3rem;
+  margin-bottom: 0.25rem;
 }
 @media(max-width: 768px) {
     #description {
