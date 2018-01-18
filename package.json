@@ -18,12 +18,10 @@
     "react-html-parser": "^2.0.2",
     "react-icons": "^2.2.7",
     "react-media": "^1.6.1",
-    "react-medium-image-zoom": "^3.0.9",
     "react-time-knob": "^0.1.4",
     "react-transition-group": "^1.2.1",
     "react-twitter-widgets": "^1.7.1",
-    "react-web-notification": "^0.3.1",
-    "react-zoomable-image": "^1.0.5"
+    "react-web-notification": "^0.3.1"
   },
   "keywords": [
     "gatsby"

@@ -1,4 +1,3 @@
-import ImageZoom from 'react-medium-image-zoom'
 import React from 'react'
 import mappic from './mapzoom.jpg'
 
