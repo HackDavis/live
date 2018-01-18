@@ -40,6 +40,7 @@
     "prepare": "patch-package"
   },
   "devDependencies": {
+    "font-awesome": "^4.7.0",
     "gh-pages": "^1.1.0",
     "patch-package": "^5.0.0",
     "prettier": "^1.9.2"
