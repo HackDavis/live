@@ -1,14 +1,36 @@
 .api-container .card {
     border-radius: 0;
+    min-width: 10em;
+    height: 15em;
+    margin-bottom: 1em;
     position: relative;
+}
+
+.api-container .card .card-header {
+    background-color: #41699c;
+    color: #ffffff;
+    height: 6em;
+}
+
+.api-container .card-body {
+    padding-top: 3rem;
+    font-size: 0.75em;
+}
+.api-container .card .card-header > h1 {
+    padding-top: 0.5rem;
+}
+.api-container {
+    padding-top: 2em;
 }
 .api-container .card-circle {
     position: absolute;
     z-index: 2;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    top: 50%;
-    margin-top: -50px;
+    width: 5em;
+    height: 5em;
+    border-radius: 2.5em;
+    margin-top: 3.5em;
     left: 50%;
+    margin-left: -2.5em;
+    background-color: white;
+    border: 1px solid black;
 }
