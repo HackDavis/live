@@ -22,7 +22,7 @@ html::before, html::after{
     max-width: 1600px;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: 75px auto 75vh;
+    grid-template-rows: 75px auto 85vh;
     grid-row-gap: 15px;
     grid-column-gap: 15px;
 }
@@ -47,7 +47,7 @@ html::before, html::after{
     border-image-slice: 1;
     overflow-y: hidden;
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 @media(max-width: 768px) {
     .index-container {
@@ -121,10 +121,12 @@ html::before, html::after{
     .timeline-container {
         grid-column: 8 / 11;
         grid-row: 3 / 4;
-        margin-top: 2.7em;
+        margin-top: 4.3em;
     }
     .schedule-container {
+        margin-top: 1.7em;
         grid-row: 3 / 4;
         grid-column: 2 / 8;
+        margin-bottom: 3em;
     }
 }
