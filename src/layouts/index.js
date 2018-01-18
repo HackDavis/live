@@ -6,6 +6,7 @@ import Alert from '../components/alert.js'
 import Media from 'react-media'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'font-awesome/css/font-awesome.css'
 import $ from 'jquery'
   //if(typeof window !== 'undefined'){ require('bootstrap/dist/js/bootstrap.min.js') }
 import Collapse from '../vendor/collapse';
@@ -39,6 +40,7 @@ const Header = () => {
         <Link exact to="/API" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> API </Link>
         <a target="_blank" href="http://help.hackdavis.io" className="nav-item nav-link"> Help </a>
         <a target="_blank" href="http://devpost.com" className="nav-item nav-link"> Devpost </a>
+        <a target="_blank" href="https://hackdavis-2018.slack.com/" className="nav-item nav-link"> <i className="fa fa-slack" aria-hidden="true"></i> </a>
       </div>
     </div>
   </nav>

@@ -71,7 +71,6 @@ export default class Schedule extends React.Component {
                     <div className="card-group list-container">
                         <dt>Jan 20</dt>
                         {this.state.items.map((v, i) => {
-                          console.log(v)
                             if(v.start.date() == 20) return (<ScheduleItem color={this.determineColor(v.category)} active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                         <dt>Jan 21</dt>
@@ -130,9 +129,18 @@ class ScheduleItem extends React.Component {
                         <div className="card-right">
                             <p className="content">{start.format("hh:mm A")} - {end.format("hh:mm A")}</p>
                         </div>
-
                     </div>
                 </div>
+                {
+                    this.state.expanded ? <Media query={{maxWidth: 992}}
+                        render={() => {
+                            return (<Detail start={start}
+                                end={end}
+                                title={this.props.item.title}
+                                description={this.props.item.html}/>);
+                        }}
+                    /> : null
+                }
             </CSSTransitionGroup>
         );
     }
@@ -140,8 +148,6 @@ class ScheduleItem extends React.Component {
 const Detail = (props) => (
     <div id="description" className="card" style={{borderColor: props.color}}>
         <div className="card-body">
-            <h1 className="card-title" style={{color: props.color}}>{props.title}</h1>
-            <h3 className="card-subtitle mb-2 text-muted">{props.start.format("Do MMM hh:mm A") + " - " + props.end.format("Do MMM hh:mm A")}</h3>
             <div>{ReactHTMLParser(props.description, {transform: (node) => {
                 if(node.type === 'tag' && node.name === 'img') {
                     return <img alt={node.attribs.alt} title={node.attribs.title} src={withPrefix(node.attribs.src)}/>;
