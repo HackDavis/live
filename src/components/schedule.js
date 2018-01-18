@@ -101,6 +101,7 @@ class ScheduleItem extends React.Component {
         this.state = {
             expanded: false
         }
+        this.handle.bind(this)
     }
     handle() {
         this.props.handler(this.props.index);
@@ -120,27 +121,19 @@ class ScheduleItem extends React.Component {
                 transitionEnterTimeout={800}
                 transitionLeaveTimeout={300}
             >
-                <div className={ "card list-card"} style={{backgroundColor: this.props.color}} onClick={this.handle.bind(this)}>
+                <div className={ "card list-card"} style={{backgroundColor: this.props.color}}>
                     <div className="card-body list-body">
                         <div className="card-left">
+                          <div className="content">
                             <h4 className="card-title">{this.props.item.title}</h4>
                             <div className="card-description">{ReactHTMLParser(this.props.item.html)}</div>
+                          </div>
                         </div>
                         <div className="card-right">
                             <p className="content">{start.format("hh:mm A")} - {end.format("hh:mm A")}</p>
                         </div>
                     </div>
                 </div>
-                {
-                    this.state.expanded ? <Media query={{maxWidth: 992}}
-                        render={() => {
-                            return (<Detail start={start}
-                                end={end}
-                                title={this.props.item.title}
-                                description={this.props.item.html}/>);
-                        }}
-                    /> : null
-                }
             </CSSTransitionGroup>
         );
     }

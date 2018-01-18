@@ -23,13 +23,14 @@
 }
 .card-description p{
   color: #525558; /* Muted text */
+  font-size: 0.9rem;
 }
 .detail-component .card-title {
     margin-left: 0.1em;
 }
 /* Overwrite bootstrap */
 .card-title {
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-bottom: 0.25rem;
 }
 @media(max-width: 768px) {
@@ -40,10 +41,10 @@
       display: none;
     }
     .card-title {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .card-right p {
+      font-size: 1.2rem;
     }
 }
 @media(max-width:992px){
@@ -67,7 +68,7 @@
     border-bottom: 2px solid rgba(0,0,0,0.25);
 }
 .list-container dt{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     top: -1px;
     position: sticky;
     z-index: 2;
@@ -100,7 +101,7 @@
 }
 /* Time of event on card */
 .card-right p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     align-self: flex-end;
 }
 .content {
