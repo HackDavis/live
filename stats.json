@@ -1,0 +1,68 @@
+{
+  "assetsByChunkName": {
+    "path---map": [
+      "path---map-a0e39f21c11f6a62c5ab.js",
+      "path---map-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-api-js": [
+      "component---src-pages-api-js-fb8dd8357a02dd1c977d.js",
+      "component---src-pages-api-js-fb8dd8357a02dd1c977d.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-0fd2de76c814e3d295c2.js",
+      "component---src-pages-index-js-0fd2de76c814e3d295c2.js.map"
+    ],
+    "path---api": [
+      "path---api-a0e39f21c11f6a62c5ab.js",
+      "path---api-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-08acc69c6c63ad6eee98.js",
+      "component---src-layouts-index-js-08acc69c6c63ad6eee98.js.map"
+    ],
+    "path---index": [
+      "path---index-3d6cfc99c5cbfac573a6.js",
+      "path---index-3d6cfc99c5cbfac573a6.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-68aad81503ae45628ade.js",
+      "build-js-styles.css",
+      "commons-68aad81503ae45628ade.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-hardware-js": [
+      "component---src-pages-hardware-js-8f0c0c93ac6101446dc1.js",
+      "component---src-pages-hardware-js-8f0c0c93ac6101446dc1.js.map"
+    ],
+    "app": [
+      "app-530f1d25faeaf607de14.js",
+      "build-js-styles.css",
+      "app-530f1d25faeaf607de14.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-pages-map-js": [
+      "component---src-pages-map-js-6e03018fc83a32f2a636.js",
+      "component---src-pages-map-js-6e03018fc83a32f2a636.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---hardware": [
+      "path---hardware-d2a06447e8ab0138c231.js",
+      "path---hardware-d2a06447e8ab0138c231.js.map"
+    ]
+  }
+}
