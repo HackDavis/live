@@ -21,6 +21,9 @@
   margin-bottom: 30px;
   border-width: 2px;
 }
+.card-description p{
+  color: #525558
+}
 .detail-component .card-title {
     margin-left: 0.1em;
 }

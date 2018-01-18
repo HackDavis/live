@@ -6,4 +6,4 @@ host: ""
 category: "Logistics"
 link: "Schedule"
 ---
-Speech from the organizers and talks from our sponsors
+Speech from the organizers and talks from our sponsors.

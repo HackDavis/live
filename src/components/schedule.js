@@ -125,11 +125,10 @@ class ScheduleItem extends React.Component {
                     <div className="card-body list-body">
                         <div className="card-left">
                             <h4 className="card-title">{this.props.item.title}</h4>
-                            {ReactHTMLParser(this.props.item.html)}
+                            <div className="card-description">{ReactHTMLParser(this.props.item.html)}</div>
                         </div>
                         <div className="card-right">
                             <p className="content">{start.format("hh:mm A")} - {end.format("hh:mm A")}</p>
-
                         </div>
 
                     </div>
