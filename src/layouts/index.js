@@ -35,26 +35,8 @@ const Header = () => {
 
         <div className="nav-item"><Link exact to="/" onClick={collapseNav} activeClassName="active" className="nav-link"> Home </Link></div>
         <div className="nav-item"><Link exact to="/map" onClick={collapseNav} activeClassName="active" className="nav-link"> Map </Link></div>
-        <Media query={{minWidth: 768}}
-          render={() => (
-            <div className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">         Tech </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <Link exact to="/hardware"onClick={collapseNav}  activeClassName="active" className="dropdown-item"> Hardware </Link>
-                <Link exact to="/API" onClick={collapseNav} activeClassName="active" className="dropdown-item"> API </Link>
-              </div>
-            </div>
-          )}
-        />
-        <Media query={{maxWidth: 768}} 
-          render={() => (
-            <div className="nav-item"><Link exact to="/hardware"onClick={collapseNav}  activeClassName="active" className="nav-link"> Hardware </Link></div>
-          )}
-        />
-        <Media query={{maxWidth: 768}}
-          render={() => (
-            <div className="nav-item"><Link exact to="/API" onClick={collapseNav} activeClassName="active" className="nav-link"> API </Link></div>
-          )} />
+        <div className="nav-item"><Link exact to="/hardware" onClick={collapseNav} activeClassName="active" className="nav-link"> Hardware </Link></div>
+        <div className="nav-item"><Link exact to="/API" onClick={collapseNav} activeClassName="active" className="nav-link"> API </Link></div>
         <div className="nav-item"><a target="_blank" href="http://help.hackdavis.io" className="nav-link"> Help Queue </a></div>
         <div className="nav-item"><a target="_blank" href="http://devpost.com" className="nav-link"> Devpost </a></div>
       </div>
