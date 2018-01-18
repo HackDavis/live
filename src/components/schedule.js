@@ -71,6 +71,7 @@ export default class Schedule extends React.Component {
                     <div className="card-group list-container">
                         <dt>Jan 20</dt>
                         {this.state.items.map((v, i) => {
+                          console.log(v)
                             if(v.start.date() == 20) return (<ScheduleItem color={this.determineColor(v.category)} active={this.state.detailIndex == i} key={i} index={i} handler={this.switchDetailIndex.bind(this)} item={v}/>)
                         })}
                         <dt>Jan 21</dt>
@@ -127,6 +128,7 @@ class ScheduleItem extends React.Component {
                         </div>
                         <div className="card-right">
                             <p className="content">{start.format("hh:mm A")} - {end.format("hh:mm A")}</p>
+                              {ReactHTMLParser(this.props.item.html)}
                         </div>
 
                     </div>
