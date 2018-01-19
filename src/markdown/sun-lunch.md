@@ -6,4 +6,4 @@ host: ""
 category: "Meals"
 link: "Schedule"
 ---
-From Open Rice Kitchen Provided by JoyRun
+Food from Woodstock's pizza provided by JoyRun.
