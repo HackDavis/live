@@ -1,14 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
-import Alert from '../components/alert.js'
-import Media from 'react-media'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
+import Alert from '../components/alert.js';
+import Media from 'react-media';
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'font-awesome/css/font-awesome.css'
-import $ from 'jquery'
-  //if(typeof window !== 'undefined'){ require('bootstrap/dist/js/bootstrap.min.js') }
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.css';
+import $ from 'jquery';
+//if(typeof window !== 'undefined'){ require('bootstrap/dist/js/bootstrap.min.js') }
 import Collapse from '../vendor/collapse';
 import Dropdown from '../vendor/dropdown';
 
@@ -18,40 +18,40 @@ if( typeof window !== `undefined` ){
 }
 
 
-import './index.css'
-import './nav.css'
+import './index.css';
+import './nav.css';
 
 const Header = () => {
   function collapseNav() {
     $("#navbarSupportedContent").collapse('hide');
   }
   return (
-  <nav id="nav" className="navbar navbar-expand-lg navbar-dark justify-content-between">
-    <h1 id="nav-title" className="navbar-brand"><Link onClick={collapseNav} to="/">HACK<strong style={{fontFamily: 'FuturaStd-Heavy'}}>DAVIS</strong> LIVE</Link></h1>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <div className="navbar-nav justify-content-center">
+    <nav id="nav" className="navbar navbar-expand-lg navbar-dark justify-content-between">
+      <h1 id="nav-title" className="navbar-brand"><Link onClick={collapseNav} to="/">HACK<strong style={{fontFamily: 'FuturaStd-Heavy'}}>DAVIS</strong> LIVE</Link></h1>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <div className="navbar-nav justify-content-center">
 
-        <Link exact to="/" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Home </Link>
-        <Link exact to="/map" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Map </Link>
-        <Link exact to="/hardware" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Hardware </Link>
-        <a target="_blank" href="http://help.hackdavis.io" className="nav-item nav-link"> Mentor </a>
-        <a target="_blank" href="https://hackdavis2018.devpost.com/" className="nav-item nav-link"> Devpost </a>
-        <a target="_blank" href="https://hackdavis-2018.slack.com/" className="nav-item nav-link"> <i className="fa fa-slack" aria-hidden="true"></i> </a>
+          <Link exact to="/" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Home </Link>
+          <Link exact to="/map" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Map </Link>
+          <Link exact to="/hardware" onClick={collapseNav} activeClassName="active" className="nav-item nav-link"> Hardware </Link>
+          <a target="_blank" href="http://help.hackdavis.io" className="nav-item nav-link"> Mentor </a>
+          <a target="_blank" href="https://hackdavis2018.devpost.com/" className="nav-item nav-link"> Devpost </a>
+          <a target="_blank" href="https://hackdavis-2018.slack.com/" className="nav-item nav-link"> <i className="fa fa-slack" aria-hidden="true"></i> </a>
+        </div>
       </div>
-    </div>
-  </nav>
-  )
-}
+    </nav>
+  );
+};
 
 class TemplateWrapper extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       children: props.children,
-    }
+    };
     this.checkGist = this.checkGist.bind(this);
   }
   checkGist() {
@@ -60,7 +60,7 @@ class TemplateWrapper extends React.Component {
         this.setState({
           children: this.state.children,
           alert: alert
-        })
+        });
       });
     }, (error) => {
       console.error(error);
@@ -93,12 +93,12 @@ class TemplateWrapper extends React.Component {
           {this.state.children()}
         </div>
       </div>
-    )
+    );
   }
 }
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func
-}
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;

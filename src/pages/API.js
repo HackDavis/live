@@ -1,7 +1,7 @@
-import React from 'react'
-import apiList from '../json/api.json'
-import './API.css'
-import './tech.css'
+import React from 'react';
+import apiList from '../json/api.json';
+import './API.css';
+import './tech.css';
 
 const SponsorCard = (props) => (
   <div className="card">
@@ -23,12 +23,12 @@ const TopThree = (props) => (
     <h1>{props.title}</h1>
     <p>{props.text}</p>
   </div>
-)
+);
 
 const API = () => (
   <div>
     <div className="hero">
-        <h1>APIs and Prizes</h1>
+      <h1>APIs and Prizes</h1>
     </div>
     <div className="container api-container">
       <div className="row">
@@ -50,6 +50,6 @@ const API = () => (
       </div>
     </div>
   </div>
-)
+);
 
-export default API
+export default API;

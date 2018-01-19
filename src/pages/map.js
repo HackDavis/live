@@ -1,21 +1,21 @@
-import React from 'react'
-import mappic from './mapzoom.jpg'
+import React from 'react';
+import mappic from './mapzoom.jpg';
 
 var divStyle = {
-    height: 'auto',
-    width: 'auto',
-    height: 'calc(100vh - 100px)'
+  height: 'auto',
+  width: 'auto',
+  height: 'calc(100vh - 100px)'
 };
 
 const MAP = () => (
-<div className="container">
-  <div style={divStyle}>
-    <a href={mappic} target="_blank"><img id="mymap" src={mappic}/></a>
+  <div className="container">
+    <div style={divStyle}>
+      <a href={mappic} target="_blank"><img id="mymap" src={mappic}/></a>
+    </div>
   </div>
-</div>
 
-)
+);
 
-export default MAP
+export default MAP;
 
 
