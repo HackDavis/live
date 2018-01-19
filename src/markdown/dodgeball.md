@@ -1,6 +1,6 @@
 ---
-start: "2018-01-20T15:00:00"
-end: "2018-01-20T16:00:00"
+start: "2018-01-20T18:00:00"
+end: "2018-01-20T19:00:00"
 title: "Dodgeball Tournament"
 host: ""
 category: "Fun"
