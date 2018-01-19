@@ -21,10 +21,22 @@
   margin-bottom: 30px;
   border-width: 2px;
 }
+
 .card-description p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-description p {
   color: #525558; /* Muted text */
   font-size: 0.9rem;
 }
+
+.card-description p:last-child {
+    margin-bottom: 0;
+}
+
 .detail-component .card-title {
     margin-left: 0.1em;
 }
@@ -39,12 +51,6 @@
     }
     .card-description p {
       display: none;
-    }
-    .card-title {
-      font-size: 1.2rem;
-    }
-    .card-right p {
-      font-size: 1.2rem;
     }
 }
 @media(max-width:992px){
@@ -76,10 +82,14 @@
     background-color: #e9e9e9;
 }
 .list-card {
-    height: 100px;
     width: 100%;
     border-left: 1px solid rgba(0,0,0,0.25) !important;
 }
+
+.list-body > .content {
+    width: 100%;
+}
+
 .list-card:hover {
     cursor: pointer;
     opacity: 0.75;

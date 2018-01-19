@@ -123,14 +123,16 @@ class ScheduleItem extends React.Component {
             >
                 <div className={ "card list-card"} style={{backgroundColor: this.props.color}}>
                     <div className="card-body list-body">
-                        <div className="card-left">
-                          <div className="content">
-                            <h4 className="card-title">{this.props.item.title}</h4>
+                        <div className="content">
+                            <div className="d-flex justify-content-between">
+                            <div className="card-left">
+                                <h4 className="content card-title">{this.props.item.title}</h4>
+                            </div>
+                            <div className="card-right">
+                                <p className="content">{start.format("hh:mm A")} - {end.format("hh:mm A")}</p>
+                            </div>
+                            </div>
                             <div className="card-description">{ReactHTMLParser(this.props.item.html)}</div>
-                          </div>
-                        </div>
-                        <div className="card-right">
-                            <p className="content">{start.format("hh:mm A")} - {end.format("hh:mm A")}</p>
                         </div>
                     </div>
                 </div>
