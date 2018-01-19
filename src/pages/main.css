@@ -112,6 +112,7 @@ html::before, html::after{
     .schedule-container {
         grid-column: 1 / 8;
         grid-row: 3 / 4;
+        margin-bottom: 3em;
     }
 }
 @media(min-width: 992px) {
@@ -138,6 +139,5 @@ html::before, html::after{
         margin-top: 1.7em;
         grid-row: 3 / 4;
         grid-column: 2 / 8;
-        margin-bottom: 3em;
     }
 }
