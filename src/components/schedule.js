@@ -115,13 +115,15 @@ class ScheduleItem extends React.Component {
   render() {
     let start = this.props.item.start;
     let end = this.props.item.end;
+    let now = moment("2018-01-20 18:00");
+    console.log(now);
     return(
       <CSSTransitionGroup
         transitionName="fade"
         transitionEnterTimeout={800}
         transitionLeaveTimeout={300}
       >
-        <div className="card list-card" style={{backgroundColor: this.props.color}}>
+        <div className="card list-card" style={{backgroundColor: (now > start && now < end) ? "white" : this.props.color, border: (now > start && now < end) ? "1.5px solid red" : null}}>
           <div className="card-body list-body" style={{minWidth: 0}}>
             <div className="content">
               <div className="d-flex justify-content-between">
@@ -129,7 +131,7 @@ class ScheduleItem extends React.Component {
                   <h4 className="content card-title">{this.props.item.title}</h4>
                 </div>
                 <div className="card-right">
-                  <p className="content">{start.format("hh:mm A")} - {end.format("hh:mm A")}</p>
+                  <p className="content">{((now > start && now < end) ? "Now" : start.format("hh:mm A")) + " - " + end.format("hh:mm A")}</p>
                 </div>
               </div>
               <div className="card-description">{ReactHTMLParser(this.props.item.html)}</div>
