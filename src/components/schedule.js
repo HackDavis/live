@@ -115,8 +115,7 @@ class ScheduleItem extends React.Component {
   render() {
     let start = this.props.item.start;
     let end = this.props.item.end;
-    let now = moment("2018-01-20 18:00");
-    console.log(now);
+    let now = moment();
     return(
       <CSSTransitionGroup
         transitionName="fade"
