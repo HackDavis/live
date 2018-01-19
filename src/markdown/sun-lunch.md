@@ -6,4 +6,4 @@ host: ""
 category: "Meals"
 link: "Schedule"
 ---
-From Woodstock's Pizza Provided by JoyRun
+Food from Woodstock's Pizza provided by JoyRun.
