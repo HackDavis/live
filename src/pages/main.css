@@ -29,6 +29,10 @@ html::before, html::after{
     flex-direction: column;
 }
 
+.end-container h1 {
+    margin-bottom: 0;
+}
+
 .index-container {
     max-width: 1600px;
     display: grid;
@@ -62,12 +66,11 @@ html::before, html::after{
 }
 @media(max-width: 768px) {
     .index-container {
-        grid-template-rows: 50px auto 1fr 800px;
+        grid-template-rows: 30px auto 1fr 800px;
     }
   .knob {
     max-width: 400px;
     max-height: 400px;
-    margin-top: 1em;
   }
     .end-container{
         text-align: center;
@@ -77,6 +80,7 @@ html::before, html::after{
     .knob {
         grid-column: 1 / 12;
         grid-row: 2 / 3;
+        margin-bottom: 1em;
     }
     .countdown-container {
         display: none;

@@ -121,8 +121,8 @@ class ScheduleItem extends React.Component {
                 transitionEnterTimeout={800}
                 transitionLeaveTimeout={300}
             >
-                <div className={ "card list-card"} style={{backgroundColor: this.props.color}}>
-                    <div className="card-body list-body">
+                <div className="card list-card" style={{backgroundColor: this.props.color}}>
+                    <div className="card-body list-body" style={{minWidth: 0}}>
                         <div className="content">
                             <div className="d-flex justify-content-between">
                             <div className="card-left">
