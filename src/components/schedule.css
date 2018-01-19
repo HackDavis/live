@@ -26,8 +26,12 @@
     min-width: 0;
 }
 
+.card .card-title {
+    margin-bottom: 0.75em;
+}
+
 .card-description p {
-    white-space: nowrap;
+    /* white-space: nowrap;*/
     overflow: hidden;
     text-overflow: ellipsis;
     color: #525558; /* Muted text */
@@ -47,14 +51,7 @@
   font-size: 1rem;
   margin-bottom: 0.25rem;
 }
-@media(max-width: 768px) {
-    #description {
-        margin-bottom: 0;
-    }
-    .card-description p {
-      display: none;
-    }
-}
+
 @media(max-width:992px){
     .list-component{
         flex-basis: 100%;
@@ -85,6 +82,7 @@
 }
 .list-card {
     width: 100%;
+    flex-direction: row;
     border-left: 1px solid rgba(0,0,0,0.25) !important;
     min-width: 0;
 }
