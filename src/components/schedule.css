@@ -62,6 +62,15 @@
     display: -webkit-inline-box !important;
 }
 
+.nav-pills .nav-item {
+    flex: 1 1 0%;
+    width: 0;
+}
+
+.nav-pills .nav-item > .btn {
+    width: 100%;
+}
+
 .list-component .nav{
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(0,0,0,0.25);
@@ -141,7 +150,6 @@
 
 .btn {
   border-radius: 0;
-  width: 120px;
 }
 
 .btn-outline-primary:not([disabled]):not(.disabled).active,
@@ -158,5 +166,5 @@
 }
 
 .btn-outline-primary:not([disabled]):not(.disabled):not(.active):hover {
-  box-shadow: none !important;
+  box-shadow: 0 0 0 0.2rem #b765ad66 !important;
 }
