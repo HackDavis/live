@@ -64,8 +64,13 @@
 
 .nav-pills .nav-item {
     flex: 1 1 0%;
-    width: 0;
     margin: 0 2px 0 2px;
+}
+
+@media(max-width: 768px) {
+    .nav-pills .nav-item {
+        margin: 0;
+    }
 }
 
 .nav-pills .nav-item > .btn {
