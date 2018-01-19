@@ -138,3 +138,25 @@
   opacity: 0.01;
   transition: opacity 300ms ease-in;
 }
+
+.btn {
+  border-radius: 0;
+  width: 120px;
+}
+
+.btn-outline-primary:not([disabled]):not(.disabled).active,
+.btn-outline-primary:not([disabled]):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle,
+.btn-outline-primary:hover {
+  background-color: #b765ad;
+  border-color: #b765ad;
+}
+
+.btn-outline-primary {
+  color: #b765ad;
+  border-color: #b765ad;
+}
+
+.btn-outline-primary:not([disabled]):not(.disabled):not(.active):hover {
+  box-shadow: none !important;
+}
