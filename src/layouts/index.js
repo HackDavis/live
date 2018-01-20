@@ -101,7 +101,7 @@ const Header = () => {
           </a>
           <a
             target="_blank"
-            href="https://l.messenger.com/l.php?u=https%3A%2F%2Fhackdavis.us13.list-manage.com%2Ftrack%2Fclick%3Fu%3D55e261b8d4dc713bb62b51557%26id%3D42d0b4c2d2%26e%3D707cac4d8a&h=ATNx1LO6G4BEiSmp7Zw41pDjrDr7M4SBt9OeZClgmTMl6SzRQ4TdoxeBXkMDUprRoHyW7r4-BxhsbgN6CYL0F2SfYaEepyVdIWYtm2zhTamKZeXieK6E-WxyskZGj6ENipFIPhh8NMt13aRX"
+            href="https://hackdavis2018.devpost.com/"
             className="nav-item nav-link"
           >
             {' '}
@@ -109,7 +109,7 @@ const Header = () => {
           </a>
           <a
             target="_blank"
-            href="https://hackdavis-2018.slack.com/"
+            href="https://l.messenger.com/l.php?u=https%3A%2F%2Fhackdavis.us13.list-manage.com%2Ftrack%2Fclick%3Fu%3D55e261b8d4dc713bb62b51557%26id%3D42d0b4c2d2%26e%3D707cac4d8a&h=ATNx1LO6G4BEiSmp7Zw41pDjrDr7M4SBt9OeZClgmTMl6SzRQ4TdoxeBXkMDUprRoHyW7r4-BxhsbgN6CYL0F2SfYaEepyVdIWYtm2zhTamKZeXieK6E-WxyskZGj6ENipFIPhh8NMt13aRX"
             className="nav-item nav-link"
           >
             {' '}
