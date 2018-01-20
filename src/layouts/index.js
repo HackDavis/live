@@ -113,6 +113,7 @@ const Header = () => {
             className="nav-item nav-link"
           >
             {' '}
+            Slack
             <i className="fa fa-slack" aria-hidden="true" />{' '}
           </a>
         </div>
@@ -172,9 +173,6 @@ class TemplateWrapper extends React.Component {
     );
   }
   componentDidMount() {
-    if (location.protocol != 'https:') {
-     location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-    }
     authorizeNotification();
     if (!this.timer) this.timer = setInterval(this.checkGist, 60000);
   }

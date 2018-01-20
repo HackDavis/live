@@ -5,4 +5,4 @@ end: "2018-01-20T13:30:00"
 category: "Logistics"
 link: "Schedule"
 ---
-Mingle and find a team if you haven't yet!
+At the workshop room. Mingle and find a team!
