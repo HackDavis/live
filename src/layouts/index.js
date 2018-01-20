@@ -113,7 +113,7 @@ const Header = () => {
             className="nav-item nav-link"
           >
             {' '}
-            Slack
+            Slack{' '}
             <i className="fa fa-slack" aria-hidden="true" />{' '}
           </a>
         </div>
