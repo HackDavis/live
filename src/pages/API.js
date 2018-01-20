@@ -2,6 +2,7 @@ import React from 'react';
 import apiList from '../json/api.json';
 import './API.css';
 import './tech.css';
+import ReactHTMLParser from 'react-html-parser';
 
 const SponsorCard = props => (
   <div className="card">
@@ -12,7 +13,7 @@ const SponsorCard = props => (
     <div className="card-body">
       {props.text
         ? props.text.map((element, i) => {
-          return <p key={i}>{element}</p>;
+          return <p key={i} dangerouslySetInnerHTML={{__html: element}}></p>;
         })
         : null}
       <a href={props.href}>{props.href}</a>
