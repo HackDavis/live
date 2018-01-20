@@ -43,11 +43,24 @@
     text-align: center;
 }
 
-.api-container .hero > h1 {
+.api-container .hero > h1:first-child {
     padding-bottom: 0.5em;
     margin-bottom: 1em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.404);
     display: inline-block;
+}
+
+.api-container .hero > p:last-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.404);
+    display: inline-block;
+    margin-top: 1em;
+    padding-top: 0.3em;
+    margin-bottom: 0.2em;
+}
+
+.api-container .hero a {
+    color: white;
+    text-decoration: underline;
 }
 
 .api-container .card-circle {

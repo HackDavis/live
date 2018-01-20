@@ -44,21 +44,22 @@ const API = () => (
             <TopThree
               icon="fa-medkit"
               title="Best Health Hack"
-              text="Centene sponsored prize."
+              text="$200 American Express gift card for each participant, sponsored by Centene."
             />
             <TopThree
               icon="fa-book"
               title="Best Education Hack"
-              text="4 Audio-technicas"
+              text="Audio-Technica ATH-M40x Professional Monitor Headphone per participant."
             />
             <TopThree
               icon="fa-globe"
               title="Best Environment Hack"
-              text="4 Amazon Echos"
+              text="Holy Stone HS160 Shadow FPV RC Drone for each participant."
             />
           </div>
         </div>
       </div>
+      <p>For a full list, see <a target="_blank" href="https://hackdavis2018.devpost.com">Devpost</a></p>
     </div>
 
     <div className="container api-card-container">
