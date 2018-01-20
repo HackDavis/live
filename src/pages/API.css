@@ -33,9 +33,23 @@
     color: #ffad2f;
 }
 
-.api-container {
+.api-card-container {
     padding-top: 2em;
 }
+
+.api-container .hero {
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.api-container .hero > h1 {
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+    display: inline-block;
+}
+
 .api-container .card-circle {
     position: absolute;
     z-index: 2;
@@ -47,11 +61,6 @@
     margin-left: -2.5em;
     background-color: white;
     border: 1px solid black;
-}
-
-.top3 {
-    border-top: 1px solid rgba(0, 0, 0, 0.178);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.178);
 }
 
 .top3 h1 {
