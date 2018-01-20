@@ -3,8 +3,7 @@ import mappic from './mapzoom.jpg';
 
 var divStyle = {
   height: 'auto',
-  width: 'auto',
-  height: 'calc(100vh - 100px)'
+  width: 'auto'
 };
 
 const MAP = () => (

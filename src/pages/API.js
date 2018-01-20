@@ -10,7 +10,9 @@ const SponsorCard = (props) => (
     </div>
     <img src={props.image} className="card-circle" />
     <div className="card-body">
-      <p>{props.text}</p>
+      {(props.text) ? props.text.map((element, i) => {
+        return (<p key={i}>{element}</p>);
+      }) : null}
       <a href={props.href}>{props.href}</a>
       {(props.prize) ? (<p><i className="fa fa-trophy" aria-hidden="true" />{props.prize}</p>) : null}
     </div>
@@ -40,8 +42,8 @@ const API = () => (
         })}
       </div>
     </div>
-    <div className="top3">
-      <div className="container">
+    <div>
+      <div className="top3 container">
         <div className="row justify-content-center">
           <TopThree icon="fa-medkit" title="Best Health Hack" text="Centene sponsored prize."/>
           <TopThree icon="fa-book" title="Best Education Hack" text="4 Audio-technicas"/>

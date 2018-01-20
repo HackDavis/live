@@ -1,26 +1,38 @@
 {
     "calhs": {
-       "title": "California Health Services"
+       "title": "California Health Services",
+       "href": "https://data.chhs.ca.gov",
+       "text": ["Public access to non-confidential health and human services data.", 
+        "The portal leverages the CKAN open data platform. APIs and other developer tools that can be found here: http://docs.ckan.org/en/latest/maintaining/datastore.html#the-datastore-api"]
     },
     "gcloud": {
-        "title": "Google Cloud"
+        "title": "Google Cloud",
+        "prize": "Best Google Cloud Platform Hack"
     },
     "intel": {
         "title": "Intel AI DevCloud",
-        "text": "A cloud hosted hardware and software platform available to developers, researchers and startups to learn, sandbox and get started on their Artificial Intelligence projects.",
+        "text": ["A cloud hosted hardware and software platform available to developers, researchers and startups to learn, sandbox and get started on their Artificial Intelligence projects."],
         "href": "https://ai.intel.com/devcloud/",
         "prize": "Best Use of DevCloud - 12 months DevCloud access + 4 drones"
     },
     "keysight": {
-        "title": "Keysight"
+        "title": "Keysight",
+        "prize": "Best use of Keysight Hardware"
     },
     "kpmg": {
         "title": "KPMG"
     },
     "osisoft": {
-        "title": "OSISoft"
+        "title": "OSISoft",
+        "prize": "Best use of OSISoft's API"
     },
     "genability": {
-        "title": "Genability"
+        "title": "Genability",
+        "href": "https://developer.genability.com",
+        "text": [
+            "Resources for developers building new energy apps using the Genability APIs and data.",
+            "App Id: 01662116-41a2-464e-9c3e-14d6e1359d55",
+            "App Key: 04a19652-1783-4e60-92e1-9b85dc90d7e5"
+        ]
     }
 }
