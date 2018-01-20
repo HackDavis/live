@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import Alert from '../components/alert.js';
 import Media from 'react-media';
+import hackpic from './hackdavis.jpg';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
@@ -120,6 +121,27 @@ const Header = () => {
   );
 };
 
+  function authorizeNotification() {
+    Notification.requestPermission(function(perm) {
+    });
+  }
+
+function callNotification(notiText)
+{
+  if (localStorage['lastAlert'] != notiText) {
+        var notification = new Notification("HackDavis 2018", {
+        dir: "auto",
+        lang: "",
+        body: notiText,
+        tag: "hackdavis",
+        icon: hackpic
+        }); 
+
+    localStorage['lastAlert'] = notiText;
+  }        
+
+}
+
 class TemplateWrapper extends React.Component {
   constructor(props) {
     super(props);
@@ -128,10 +150,16 @@ class TemplateWrapper extends React.Component {
     };
     this.checkGist = this.checkGist.bind(this);
   }
+
   checkGist() {
+    console.log("Accesed:");
+
     fetch('http://getschedulehelper.com/alerts.json', { cache: 'reload' }).then(
       response => {
         response.json().then(alert => {
+
+          callNotification(alert.text);
+
           this.setState({
             children: this.state.children,
             alert: alert,
@@ -144,6 +172,7 @@ class TemplateWrapper extends React.Component {
     );
   }
   componentDidMount() {
+    authorizeNotification();
     if (!this.timer) this.timer = setInterval(this.checkGist, 60000);
   }
   componentWillUnmount() {
