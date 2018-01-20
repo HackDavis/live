@@ -6,3 +6,4 @@ host: "osisoft"
 category: "Workshops"
 link: "Schedule"
 ---
+OSISoft will be going over their hackathon challenge, the dataset, and their API.

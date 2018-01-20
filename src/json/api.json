@@ -7,6 +7,8 @@
     },
     "gcloud": {
         "title": "Google Cloud",
+        "href": "http://bit.ly/gcp-redeem",
+        "text": ["Get hacking with GCP's powerful suite of compute, storage and ML tools. Visit the booth to obtain a redemption code to enter at the url below."],
         "prize": "Best Google Cloud Platform Hack"
     },
     "intel": {
@@ -20,9 +22,6 @@
         "text": ["Keysight is the world's leading electronic measurement company, transforming today's measurement experience through innovations in wireless, modular and software solutions.",
         "Keysight is lending out hardware kits including RPi's with capacitive touch screens, sensors, and free swag."],
         "prize": "Best Hardware Hack - 4x Keysight Digital Multimeters"
-    },
-    "kpmg": {
-        "title": "KPMG"
     },
     "osisoft": {
         "title": "OSISoft Pi Web API",

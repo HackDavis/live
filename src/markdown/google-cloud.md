@@ -6,3 +6,4 @@ host: "googlecloud"
 category: "Workshops"
 link: "Schedule"
 ---
+Getting started with Google Cloud Platform, using python and the Google APIs.
