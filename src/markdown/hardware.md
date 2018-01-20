@@ -15,7 +15,7 @@ Here's what you can check out from the lab:
 * 1x  Amazon Fire Phone
 * 6x  DragonBoard 410c
 * 1x  DragonBoard 410c Re-Flashing SD Card
-* 6x  Particle Photons
+* 4x  Particle Photons
 * 6x  Arduino 101
 * 6x  Base Shield
 * 1x  Grove Starter Kit
