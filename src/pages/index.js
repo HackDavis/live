@@ -13,7 +13,7 @@ class IndexPage extends React.Component {
       minutes: 0,
       hours: 0,
       seconds: 0,
-      end: new Date('2018-01-21T12:00:00-07:00').getTime(),
+      end: new Date('2018-01-21T13:00:00-07:00').getTime(),
     };
   }
   render() {
