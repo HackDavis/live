@@ -1,6 +1,6 @@
 ---
-start: "2018-01-20T19:00:00"
-end: "2018-01-20T21:00:00"
+start: "2018-01-20T18:30:00"
+end: "2018-01-20T19:30:00"
 title: "Scoop Tech Workshop"
 host: "scoop"
 category: "Workshops"

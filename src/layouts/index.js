@@ -129,7 +129,7 @@ const Header = () => {
 
 function callNotification(notiText)
 {
-  if (localStorage['lastAlert'] != notiText) {
+  if (localStorage['lastAlert'] != notiText && notiText != '') {
         var notification = new Notification("HackDavis 2018", {
         dir: "auto",
         lang: "",
@@ -138,8 +138,8 @@ function callNotification(notiText)
         icon: hackpic
         }); 
 
-    localStorage['lastAlert'] = notiText;
   }        
+  localStorage['lastAlert'] = notiText;
 
 }
 

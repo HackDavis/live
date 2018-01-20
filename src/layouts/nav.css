@@ -68,6 +68,7 @@
     font-family: inherit;
     text-decoration: none;
     z-index: 10;
+    font-family: 'Futura Std'
 }
 #nav .nav-item:hover, .nav-item.active {
     background-color: #5481be;
