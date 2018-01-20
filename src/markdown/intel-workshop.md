@@ -1,6 +1,6 @@
 ---
 start: "2018-01-20T13:30:00"
-end: "2018-01-20T16:00:00"
+end: "2018-01-20T15:00:00"
 title: "Intel API Workshop"
 host: "intel"
 category: "Workshops"
