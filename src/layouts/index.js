@@ -144,7 +144,7 @@ class TemplateWrapper extends React.Component {
     );
   }
   componentDidMount() {
-    if (!this.timer) this.timer = setInterval(this.checkGist, 5000);
+    if (!this.timer) this.timer = setInterval(this.checkGist, 60000);
   }
   componentWillUnmount() {
     clearInterval(this.timer);
