@@ -30,6 +30,8 @@
         "text": [
             "The PI Web API is a RESTful interface to the PI System. It gives client applications read and write access to their AF and PI data over HTTPS.",
             "OSISoft blog post about HackDavis: https://goo.gl/AnZDBz",
+            "Username: ou\\piapihack2018",
+            "Password: Go $ave energy, 2018!",
             "API Docs: https://goo.gl/uryYHi"
         ],
         "prize": "Best use of OSISoft's API"
