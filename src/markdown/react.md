@@ -1,6 +1,6 @@
 ---
-start: "2018-01-20T23:15:00"
-end: "2018-01-21T00:15:00"
+start: "2018-01-20T23:30:00"
+end: "2018-01-21T00:30:00"
 title: "React Workshop"
 category: "Workshops"
 link: "Schedule"
