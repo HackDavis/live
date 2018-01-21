@@ -133,7 +133,7 @@ function callNotification(notiText)
         var notification = new Notification("HackDavis 2018", {
         dir: "auto",
         lang: "",
-        body: notiText,
+        body: notiText.text,
         tag: "hackdavis",
         icon: hackpic
         }); 
