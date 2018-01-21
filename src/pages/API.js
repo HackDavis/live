@@ -54,8 +54,8 @@ const API = () => (
             />
             <TopThree
               icon="fa-globe"
-              title="Best Environment Hack"
-              text="Holy Stone HS160 Shadow FPV RC Drone for each participant and a 6 month free trial of Balsamiq Desktop license."
+              title="Best Environment Hack By Balsamiq"
+              text="6 month free trial of Balsamiq Desktop license and a Holy Stone HS160 Shadow FPV RC Drone for each participant."
             />
           </div>
         </div>
