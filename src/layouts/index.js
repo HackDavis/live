@@ -129,7 +129,7 @@ const Header = () => {
 
 function callNotification(notiText)
 {
-  if (localStorage['lastAlert'] != notiText && notiText != '') {
+  if (localStorage['lastAlert'].text != notiText.text && localStorage['lastAlert'].important != notiText.important && notiText.text != '') {
         var notification = new Notification("HackDavis 2018", {
         dir: "auto",
         lang: "",
@@ -159,7 +159,7 @@ class TemplateWrapper extends React.Component {
       response => {
         response.json().then(alert => {
 
-          callNotification(alert.text);
+          callNotification(alert);
 
           this.setState({
             children: this.state.children,
