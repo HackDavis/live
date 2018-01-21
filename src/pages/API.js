@@ -9,7 +9,6 @@ const SponsorCard = props => (
     <div className="card-header">
       <h1 className="card-title">{props.title}</h1>
     </div>
-    <img src={props.image ? props.image : null} className="card-circle" />
     <div className="card-body">
       {props.text
         ? props.text.map((element, i) => {
@@ -73,7 +72,6 @@ const API = () => (
                 text={v.text}
                 href={v.href}
                 prize={v.prize}
-                image={v.image}
               />
             </div>
           );

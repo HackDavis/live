@@ -1,6 +1,6 @@
 .api-container .card {
     min-width: 10em;
-    min-height: 17em;
+    min-height: 15em;
     margin-bottom: 1em;
     position: relative;
 }
@@ -10,7 +10,7 @@
 .api-container .card .card-header {
     background-color: #41699c;
     color: #ffffff;
-    height: 6em;
+    height: 4em;
     flex-shrink: 0;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .api-container .card-body {
-    padding-top: 3rem;
+    padding-top: 1rem;
     font-size: 0.75em;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .api-container .hero {
-    padding-top: 7rem;
+    padding-top: 4rem;
     padding-bottom: 1rem;
     text-align: center;
 }

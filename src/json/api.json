@@ -3,7 +3,7 @@
        "title": "California Health Services",
        "href": "https://data.chhs.ca.gov",
        "text": ["Public access to non-confidential health and human services data.", 
-        "The portal leverages the CKAN open data platform. APIs and other developer tools that can be found here: http://docs.ckan.org/en/latest/maintaining/datastore.html#the-datastore-api"]
+        "The portal leverages the CKAN open data platform. APIs and other developer tools that can be found here: <a href='http://docs.ckan.org/en/latest/maintaining/datastore.html#the-datastore-api'>http://docs.ckan.org/en/latest/maintaining/datastore.html#the-datastore-api</a>"]
     },
     "gcloud": {
         "title": "Google Cloud",
