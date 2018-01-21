@@ -8,7 +8,7 @@ const Hardware = ({ data }) => {
     <div>
       <div className="hero">
         <h1>Checkout Hardware from MLH Labs</h1>
-        <a href="http://hardware.mlh.io">
+        <a href="https://hardware.mlh.io/events/hackdavis-s2018">
           <button className="round-button white-button">Register</button>
         </a>
       </div>

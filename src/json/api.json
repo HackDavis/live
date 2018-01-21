@@ -3,10 +3,12 @@
        "title": "California Health Services",
        "href": "https://data.chhs.ca.gov",
        "text": ["Public access to non-confidential health and human services data.", 
-        "The portal leverages the CKAN open data platform. APIs and other developer tools that can be found here: http://docs.ckan.org/en/latest/maintaining/datastore.html#the-datastore-api"]
+        "The portal leverages the CKAN open data platform. APIs and other developer tools that can be found here: <a href='http://docs.ckan.org/en/latest/maintaining/datastore.html#the-datastore-api'>http://docs.ckan.org/en/latest/maintaining/datastore.html#the-datastore-api</a>"]
     },
     "gcloud": {
         "title": "Google Cloud",
+        "href": "http://bit.ly/gcp-redeem",
+        "text": ["Get hacking with GCP's powerful suite of compute, storage and ML tools. Visit the booth to obtain a redemption code to enter at the url below."],
         "prize": "Best Google Cloud Platform Hack"
     },
     "intel": {
@@ -21,18 +23,15 @@
         "Keysight is lending out hardware kits including RPi's with capacitive touch screens, sensors, and free swag."],
         "prize": "Best Hardware Hack - 4x Keysight Digital Multimeters"
     },
-    "kpmg": {
-        "title": "KPMG"
-    },
     "osisoft": {
         "title": "OSISoft Pi Web API",
         "href": "https://ucd-piwebapi.ou.ad3.ucdavis.edu/piwebapi/",
         "text": [
             "The PI Web API is a RESTful interface to the PI System. It gives client applications read and write access to their AF and PI data over HTTPS.",
-            "OSISoft blog post about HackDavis: https://goo.gl/AnZDBz",
+            "<a href='https://goo.gl/AnZDBz'>OSISoft blog post about HackDavis</a>",
             "Username: ou\\piapihack2018",
             "Password: Go $ave energy, 2018!",
-            "API Docs: https://goo.gl/uryYHi"
+            "<a href='https://goo.gl/uryYHi'>Data Overview</a>"
         ],
         "prize": "Best use of OSISoft's API"
     },

@@ -2,17 +2,17 @@ import React from 'react';
 import apiList from '../json/api.json';
 import './API.css';
 import './tech.css';
+import ReactHTMLParser from 'react-html-parser';
 
 const SponsorCard = props => (
   <div className="card">
     <div className="card-header">
       <h1 className="card-title">{props.title}</h1>
     </div>
-    <img src={props.image} className="card-circle" />
     <div className="card-body">
       {props.text
         ? props.text.map((element, i) => {
-          return <p key={i}>{element}</p>;
+          return <p key={i} dangerouslySetInnerHTML={{__html: element}}></p>;
         })
         : null}
       <a href={props.href}>{props.href}</a>
@@ -53,8 +53,8 @@ const API = () => (
             />
             <TopThree
               icon="fa-globe"
-              title="Best Environment Hack"
-              text="Holy Stone HS160 Shadow FPV RC Drone for each participant."
+              title="Best Environment Hack By Balsamiq"
+              text="6 month free trial of Balsamiq Desktop license and a Holy Stone HS160 Shadow FPV RC Drone for each participant."
             />
           </div>
         </div>
