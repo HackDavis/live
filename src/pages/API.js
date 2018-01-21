@@ -3,14 +3,13 @@ import apiList from '../json/api.json';
 import './API.css';
 import './tech.css';
 import ReactHTMLParser from 'react-html-parser';
-import {withPrefix} from 'gatsby-link';
 
 const SponsorCard = props => (
   <div className="card">
     <div className="card-header">
       <h1 className="card-title">{props.title}</h1>
     </div>
-    <img src={props.image ? withPrefix(props.image) : null} className="card-circle" />
+    <img src={props.image ? props.image : null} className="card-circle" />
     <div className="card-body">
       {props.text
         ? props.text.map((element, i) => {
