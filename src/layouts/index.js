@@ -130,7 +130,7 @@ const Header = () => {
 function callNotification(notiText)
 {
   let stored = localStorage.getItem("lastAlert");
-  if (stored.text != notiText.text && stored.important != notiText.important && notiText.text != '') {
+  if (stored != notiText.text && notiText.text != '') {
         var notification = new Notification("HackDavis 2018", {
         dir: "auto",
         lang: "",
@@ -140,7 +140,7 @@ function callNotification(notiText)
         }); 
 
   }        
-  localStorage.setItem('lastAlert', notiText);
+  localStorage.setItem('lastAlert', notiText.text);
 
 }
 
